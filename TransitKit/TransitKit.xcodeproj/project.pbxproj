@@ -7,10 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		149777FF1F367858001B6A2D /* TSTRTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149777FE1F367858001B6A2D /* TSTRTParser.swift */; };
+		149778011F367867001B6A2D /* TSTRTMetraParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778001F367867001B6A2D /* TSTRTMetraParser.swift */; };
+		149778031F36786E001B6A2D /* FeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778021F36786E001B6A2D /* FeedEntity.swift */; };
+		149778051F367873001B6A2D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778041F367873001B6A2D /* Alert.swift */; };
+		149778071F36787B001B6A2D /* TripUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778061F36787B001B6A2D /* TripUpdate.swift */; };
+		149778091F367888001B6A2D /* VehiclePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778081F367888001B6A2D /* VehiclePosition.swift */; };
+		1497780B1F367895001B6A2D /* TripDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497780A1F367895001B6A2D /* TripDescriptor.swift */; };
+		1497780D1F3678A4001B6A2D /* VehicleDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497780C1F3678A4001B6A2D /* VehicleDescriptor.swift */; };
+		1497780F1F3678AB001B6A2D /* TimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497780E1F3678AB001B6A2D /* TimeRange.swift */; };
+		149778111F3678B5001B6A2D /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778101F3678B5001B6A2D /* Position.swift */; };
+		149778131F3678BC001B6A2D /* StopTimeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778121F3678BC001B6A2D /* StopTimeEvent.swift */; };
+		149778151F3678CB001B6A2D /* StopTimeUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778141F3678CB001B6A2D /* StopTimeUpdate.swift */; };
+		149778171F3678D4001B6A2D /* VehicleStopStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778161F3678D4001B6A2D /* VehicleStopStatus.swift */; };
+		149778191F3678D8001B6A2D /* Cause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778181F3678D8001B6A2D /* Cause.swift */; };
+		1497781B1F3678E2001B6A2D /* CongestionLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497781A1F3678E2001B6A2D /* CongestionLevel.swift */; };
+		1497781D1F3678E8001B6A2D /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497781C1F3678E8001B6A2D /* Effect.swift */; };
+		1497781F1F3678F0001B6A2D /* EntitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497781E1F3678F0001B6A2D /* EntitySelector.swift */; };
+		149778211F3678F8001B6A2D /* OccupancyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778201F3678F8001B6A2D /* OccupancyStatus.swift */; };
+		149778251F36790F001B6A2D /* ScheduleRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778241F36790F001B6A2D /* ScheduleRelationship.swift */; };
 		14F88BED1F35C1410009EC63 /* TransitKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F88BEB1F35C1410009EC63 /* TransitKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		149777FE1F367858001B6A2D /* TSTRTParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTRTParser.swift; sourceTree = "<group>"; };
+		149778001F367867001B6A2D /* TSTRTMetraParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSTRTMetraParser.swift; sourceTree = "<group>"; };
+		149778021F36786E001B6A2D /* FeedEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedEntity.swift; sourceTree = "<group>"; };
+		149778041F367873001B6A2D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		149778061F36787B001B6A2D /* TripUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripUpdate.swift; sourceTree = "<group>"; };
+		149778081F367888001B6A2D /* VehiclePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePosition.swift; sourceTree = "<group>"; };
+		1497780A1F367895001B6A2D /* TripDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDescriptor.swift; sourceTree = "<group>"; };
+		1497780C1F3678A4001B6A2D /* VehicleDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleDescriptor.swift; sourceTree = "<group>"; };
+		1497780E1F3678AB001B6A2D /* TimeRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeRange.swift; sourceTree = "<group>"; };
+		149778101F3678B5001B6A2D /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		149778121F3678BC001B6A2D /* StopTimeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTimeEvent.swift; sourceTree = "<group>"; };
+		149778141F3678CB001B6A2D /* StopTimeUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopTimeUpdate.swift; sourceTree = "<group>"; };
+		149778161F3678D4001B6A2D /* VehicleStopStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehicleStopStatus.swift; sourceTree = "<group>"; };
+		149778181F3678D8001B6A2D /* Cause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cause.swift; sourceTree = "<group>"; };
+		1497781A1F3678E2001B6A2D /* CongestionLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CongestionLevel.swift; sourceTree = "<group>"; };
+		1497781C1F3678E8001B6A2D /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		1497781E1F3678F0001B6A2D /* EntitySelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitySelector.swift; sourceTree = "<group>"; };
+		149778201F3678F8001B6A2D /* OccupancyStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupancyStatus.swift; sourceTree = "<group>"; };
+		149778241F36790F001B6A2D /* ScheduleRelationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleRelationship.swift; sourceTree = "<group>"; };
 		14F88BE81F35C1410009EC63 /* TransitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88BEB1F35C1410009EC63 /* TransitKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitKit.h; sourceTree = "<group>"; };
 		14F88BEC1F35C1410009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +65,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149778261F367A06001B6A2D /* Realtime GTFS */ = {
+			isa = PBXGroup;
+			children = (
+				149777FE1F367858001B6A2D /* TSTRTParser.swift */,
+				149778001F367867001B6A2D /* TSTRTMetraParser.swift */,
+				149778271F367A12001B6A2D /* Feed Entity */,
+				149778281F367A1A001B6A2D /* Descriptors */,
+				149778291F367A25001B6A2D /* Structs */,
+				1497782A1F367A2C001B6A2D /* Enums */,
+			);
+			name = "Realtime GTFS";
+			sourceTree = "<group>";
+		};
+		149778271F367A12001B6A2D /* Feed Entity */ = {
+			isa = PBXGroup;
+			children = (
+				149778021F36786E001B6A2D /* FeedEntity.swift */,
+				149778041F367873001B6A2D /* Alert.swift */,
+				149778061F36787B001B6A2D /* TripUpdate.swift */,
+				149778081F367888001B6A2D /* VehiclePosition.swift */,
+			);
+			name = "Feed Entity";
+			sourceTree = "<group>";
+		};
+		149778281F367A1A001B6A2D /* Descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				1497780A1F367895001B6A2D /* TripDescriptor.swift */,
+				1497780C1F3678A4001B6A2D /* VehicleDescriptor.swift */,
+			);
+			name = Descriptors;
+			sourceTree = "<group>";
+		};
+		149778291F367A25001B6A2D /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				1497780E1F3678AB001B6A2D /* TimeRange.swift */,
+				149778101F3678B5001B6A2D /* Position.swift */,
+				149778121F3678BC001B6A2D /* StopTimeEvent.swift */,
+				149778141F3678CB001B6A2D /* StopTimeUpdate.swift */,
+				149778161F3678D4001B6A2D /* VehicleStopStatus.swift */,
+			);
+			name = Structs;
+			sourceTree = "<group>";
+		};
+		1497782A1F367A2C001B6A2D /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				149778181F3678D8001B6A2D /* Cause.swift */,
+				1497781A1F3678E2001B6A2D /* CongestionLevel.swift */,
+				1497781C1F3678E8001B6A2D /* Effect.swift */,
+				1497781E1F3678F0001B6A2D /* EntitySelector.swift */,
+				149778201F3678F8001B6A2D /* OccupancyStatus.swift */,
+				149778241F36790F001B6A2D /* ScheduleRelationship.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
 		14F88BDE1F35C1410009EC63 = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				14F88BEB1F35C1410009EC63 /* TransitKit.h */,
+				149778261F367A06001B6A2D /* Realtime GTFS */,
 				14F88BEC1F35C1410009EC63 /* Info.plist */,
 			);
 			path = TransitKit;
@@ -96,6 +193,7 @@
 					14F88BE71F35C1410009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +230,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149778031F36786E001B6A2D /* FeedEntity.swift in Sources */,
+				1497780D1F3678A4001B6A2D /* VehicleDescriptor.swift in Sources */,
+				149778011F367867001B6A2D /* TSTRTMetraParser.swift in Sources */,
+				149778211F3678F8001B6A2D /* OccupancyStatus.swift in Sources */,
+				1497781B1F3678E2001B6A2D /* CongestionLevel.swift in Sources */,
+				1497781D1F3678E8001B6A2D /* Effect.swift in Sources */,
+				149778151F3678CB001B6A2D /* StopTimeUpdate.swift in Sources */,
+				149778071F36787B001B6A2D /* TripUpdate.swift in Sources */,
+				149778191F3678D8001B6A2D /* Cause.swift in Sources */,
+				149778091F367888001B6A2D /* VehiclePosition.swift in Sources */,
+				149778051F367873001B6A2D /* Alert.swift in Sources */,
+				149778251F36790F001B6A2D /* ScheduleRelationship.swift in Sources */,
+				1497780F1F3678AB001B6A2D /* TimeRange.swift in Sources */,
+				149778131F3678BC001B6A2D /* StopTimeEvent.swift in Sources */,
+				1497780B1F367895001B6A2D /* TripDescriptor.swift in Sources */,
+				1497781F1F3678F0001B6A2D /* EntitySelector.swift in Sources */,
+				149778111F3678B5001B6A2D /* Position.swift in Sources */,
+				149777FF1F367858001B6A2D /* TSTRTParser.swift in Sources */,
+				149778171F3678D4001B6A2D /* VehicleStopStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +363,7 @@
 		14F88BF11F35C1410009EC63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 72S993BNAV;
@@ -259,6 +377,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvossimulator appletvos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -266,6 +385,7 @@
 		14F88BF21F35C1410009EC63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 72S993BNAV;
@@ -302,6 +422,7 @@
 				14F88BF21F35C1410009EC63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
