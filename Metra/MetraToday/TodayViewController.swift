@@ -13,22 +13,42 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+
+        preferredContentSize = CGSize(width: 0, height: 300)
+
+        guard let mapViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else {
+            fatalError()
+        }
+        addChildViewController(mapViewController)
+
+        let mapView = mapViewController.view!
+        view.addSubview(mapView)
+        mapView.translatesAutoresizingMaskIntoConstraints = false
+
+        let constraints = [
+            mapView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            mapView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            mapView.topAnchor.constraint(equalTo: view.topAnchor),
+            mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
+
+        mapViewController.didMove(toParentViewController: self)
+        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+    // MARK: - NCWidgetProviding
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.newData)
+    }
+
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if activeDisplayMode == .expanded {
+            preferredContentSize = CGSize(width: 0.0, height: 300.0)
+        } else if activeDisplayMode == .compact {
+            preferredContentSize = maxSize
+        }
     }
     
 }
