@@ -7,6 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
+		1497782D1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
+		1497782E1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
+		149778301F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
+		149778311F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
+		149778321F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
+		149778341F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
+		149778351F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
+		149778361F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
+		149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
+		1497783A1F367B31001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
+		1497783C1F367B36001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
+		1497783E1F367B3A001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
+		149778401F367B3F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
+		149778421F367B47001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
+		149778431F367B4E001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
+		149778441F367B4E001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
+		149778451F367B4E001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
+		149778461F367B4E001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
+		149778471F367B4E001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
+		149778481F367B4E001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
+		149778491F367B4F001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
+		1497784A1F367B4F001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
+		1497784B1F367B4F001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
+		1497784C1F367B4F001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
+		1497784D1F367B4F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
+		1497784E1F367B4F001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
+		1497785F1F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
+		149778601F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
+		149778611F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
+		149778621F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
+		149778631F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
+		149778641F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
+		149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
+		149778661F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
+		149778671F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
+		149778681F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
+		149778691F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
+		1497786A1F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
+		1497786B1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
+		1497786C1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
+		1497786D1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
+		1497786E1F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
+		1497786F1F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
+		149778701F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
+		149778711F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
+		149778721F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
+		149778731F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
+		149778741F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
+		149778751F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
+		149778761F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
+		149778771F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
+		149778781F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
+		149778791F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
+		1497787A1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
+		1497787B1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
+		1497787C1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
+		1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
+		1497787F1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
+		149778801F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
+		149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
+		149778831F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
+		149778841F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
+		149778871F367CD8001B6A2D /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149778861F367CD8001B6A2D /* CSV.framework */; };
+		149778891F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
+		1497788A1F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
+		1497788B1F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
+		1497788D1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
+		1497788E1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
+		1497788F1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
+		149778911F367EC4001B6A2D /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778901F367EC4001B6A2D /* AlertTableViewCell.swift */; };
+		149778931F367ECA001B6A2D /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778921F367ECA001B6A2D /* AlertTableViewController.swift */; };
 		14F88B961F35C0B40009EC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88B951F35C0B40009EC63 /* AppDelegate.swift */; };
 		14F88B981F35C0B40009EC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88B971F35C0B40009EC63 /* ViewController.swift */; };
 		14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B991F35C0B40009EC63 /* Main.storyboard */; };
@@ -55,6 +127,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1497782B1F367AFF001B6A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+Filter.swift"; sourceTree = "<group>"; };
+		149778331F367B14001B6A2D /* MapViewController+MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapView.swift"; sourceTree = "<group>"; };
+		149778371F367B2B001B6A2D /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		149778391F367B31001B6A2D /* MapFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFilter.swift; sourceTree = "<group>"; };
+		1497783B1F367B36001B6A2D /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		1497783D1F367B3A001B6A2D /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		1497783F1F367B3F001B6A2D /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		149778411F367B47001B6A2D /* MetraDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraDownloadTask.swift; sourceTree = "<group>"; };
+		149778551F367BC0001B6A2D /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
+		149778561F367BC0001B6A2D /* calendar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.txt; sourceTree = "<group>"; };
+		149778571F367BC0001B6A2D /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
+		149778581F367BC0001B6A2D /* fare_attributes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_attributes.txt; sourceTree = "<group>"; };
+		149778591F367BC0001B6A2D /* fare_rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_rules.txt; sourceTree = "<group>"; };
+		1497785A1F367BC0001B6A2D /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
+		1497785B1F367BC0001B6A2D /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
+		1497785C1F367BC0001B6A2D /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
+		1497785D1F367BC0001B6A2D /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
+		1497785E1F367BC0001B6A2D /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
+		1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
+		149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePositionAnnotation.swift; sourceTree = "<group>"; };
+		149778861F367CD8001B6A2D /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = "../3rd Party/CSV/build/Debug-iphoneos/CSV.framework"; sourceTree = "<group>"; };
+		149778881F367D4E001B6A2D /* MetraExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraExtensions.swift; sourceTree = "<group>"; };
+		1497788C1F367DB3001B6A2D /* VehiclePinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePinView.swift; sourceTree = "<group>"; };
+		149778901F367EC4001B6A2D /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		149778921F367ECA001B6A2D /* AlertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
 		14F88B921F35C0B40009EC63 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88B951F35C0B40009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F88B971F35C0B40009EC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149778871F367CD8001B6A2D /* CSV.framework in Frameworks */,
 				14F88C021F35C1E70009EC63 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,14 +210,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1497784F1F367B5D001B6A2D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				149778511F367B83001B6A2D /* Filtering */,
+				149778501F367B7A001B6A2D /* Map View */,
+				149778521F367B90001B6A2D /* Model */,
+				149778531F367BA6001B6A2D /* Resources */,
+			);
+			name = Shared;
+			path = Metra;
+			sourceTree = "<group>";
+		};
+		149778501F367B7A001B6A2D /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				1497788C1F367DB3001B6A2D /* VehiclePinView.swift */,
+				149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */,
+				1497782B1F367AFF001B6A2D /* MapViewController.swift */,
+				1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */,
+				149778331F367B14001B6A2D /* MapViewController+MapView.swift */,
+			);
+			name = "Map View";
+			sourceTree = "<group>";
+		};
+		149778511F367B83001B6A2D /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				149778391F367B31001B6A2D /* MapFilter.swift */,
+				149778371F367B2B001B6A2D /* FilterTableViewController.swift */,
+			);
+			name = Filtering;
+			sourceTree = "<group>";
+		};
+		149778521F367B90001B6A2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1497783B1F367B36001B6A2D /* Route.swift */,
+				1497783D1F367B3A001B6A2D /* Shape.swift */,
+				1497783F1F367B3F001B6A2D /* System.swift */,
+				149778881F367D4E001B6A2D /* MetraExtensions.swift */,
+				149778411F367B47001B6A2D /* MetraDownloadTask.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		149778531F367BA6001B6A2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */,
+				149778541F367BC0001B6A2D /* GTFS */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		149778541F367BC0001B6A2D /* GTFS */ = {
+			isa = PBXGroup;
+			children = (
+				149778551F367BC0001B6A2D /* agency.txt */,
+				149778561F367BC0001B6A2D /* calendar.txt */,
+				149778571F367BC0001B6A2D /* calendar_dates.txt */,
+				149778581F367BC0001B6A2D /* fare_attributes.txt */,
+				149778591F367BC0001B6A2D /* fare_rules.txt */,
+				1497785A1F367BC0001B6A2D /* routes.txt */,
+				1497785B1F367BC0001B6A2D /* shapes.txt */,
+				1497785C1F367BC0001B6A2D /* stop_times.txt */,
+				1497785D1F367BC0001B6A2D /* stops.txt */,
+				1497785E1F367BC0001B6A2D /* trips.txt */,
+			);
+			path = GTFS;
+			sourceTree = "<group>";
+		};
+		149778851F367CD8001B6A2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				149778861F367CD8001B6A2D /* CSV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		14F88B891F35C0B40009EC63 = {
 			isa = PBXGroup;
 			children = (
-				14F88B941F35C0B40009EC63 /* Metra */,
+				1497784F1F367B5D001B6A2D /* Shared */,
+				14F88B941F35C0B40009EC63 /* Metra (iOS) */,
 				14F88BD01F35C1110009EC63 /* Metra (tvOS) */,
 				14F88BBD1F35C0DB0009EC63 /* MetraToday */,
 				14F88BAC1F35C0C20009EC63 /* MetraScreenshots */,
 				14F88B931F35C0B40009EC63 /* Products */,
+				149778851F367CD8001B6A2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,16 +313,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		14F88B941F35C0B40009EC63 /* Metra */ = {
+		14F88B941F35C0B40009EC63 /* Metra (iOS) */ = {
 			isa = PBXGroup;
 			children = (
 				14F88B951F35C0B40009EC63 /* AppDelegate.swift */,
 				14F88B971F35C0B40009EC63 /* ViewController.swift */,
+				149778901F367EC4001B6A2D /* AlertTableViewCell.swift */,
+				149778921F367ECA001B6A2D /* AlertTableViewController.swift */,
 				14F88B991F35C0B40009EC63 /* Main.storyboard */,
 				14F88B9C1F35C0B50009EC63 /* Assets.xcassets */,
 				14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */,
 				14F88BA11F35C0B50009EC63 /* Info.plist */,
 			);
+			name = "Metra (iOS)";
 			path = Metra;
 			sourceTree = "<group>";
 		};
@@ -320,9 +503,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149778711F367BC0001B6A2D /* shapes.txt in Resources */,
+				149778621F367BC0001B6A2D /* calendar.txt in Resources */,
+				149778681F367BC0001B6A2D /* fare_attributes.txt in Resources */,
 				14F88BA01F35C0B50009EC63 /* LaunchScreen.storyboard in Resources */,
+				149778771F367BC0001B6A2D /* stops.txt in Resources */,
+				149778741F367BC0001B6A2D /* stop_times.txt in Resources */,
 				14F88B9D1F35C0B50009EC63 /* Assets.xcassets in Resources */,
+				1497786B1F367BC0001B6A2D /* fare_rules.txt in Resources */,
+				1497787A1F367BC0001B6A2D /* trips.txt in Resources */,
 				14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */,
+				149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */,
+				1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
+				1497785F1F367BC0001B6A2D /* agency.txt in Resources */,
+				1497786E1F367BC0001B6A2D /* routes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +531,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1497786C1F367BC0001B6A2D /* fare_rules.txt in Resources */,
+				149778691F367BC0001B6A2D /* fare_attributes.txt in Resources */,
+				1497786F1F367BC0001B6A2D /* routes.txt in Resources */,
+				1497787F1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
+				149778631F367BC0001B6A2D /* calendar.txt in Resources */,
+				1497787B1F367BC0001B6A2D /* trips.txt in Resources */,
+				149778721F367BC0001B6A2D /* shapes.txt in Resources */,
 				14F88BC21F35C0DB0009EC63 /* MainInterface.storyboard in Resources */,
+				149778781F367BC0001B6A2D /* stops.txt in Resources */,
+				149778661F367BC0001B6A2D /* calendar_dates.txt in Resources */,
+				149778601F367BC0001B6A2D /* agency.txt in Resources */,
+				149778751F367BC0001B6A2D /* stop_times.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +550,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149778641F367BC0001B6A2D /* calendar.txt in Resources */,
+				149778671F367BC0001B6A2D /* calendar_dates.txt in Resources */,
+				149778701F367BC0001B6A2D /* routes.txt in Resources */,
 				14F88BD91F35C1120009EC63 /* Assets.xcassets in Resources */,
+				149778791F367BC0001B6A2D /* stops.txt in Resources */,
+				1497787C1F367BC0001B6A2D /* trips.txt in Resources */,
+				1497786A1F367BC0001B6A2D /* fare_attributes.txt in Resources */,
 				14F88BD71F35C1110009EC63 /* Main.storyboard in Resources */,
+				149778611F367BC0001B6A2D /* agency.txt in Resources */,
+				149778801F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
+				149778761F367BC0001B6A2D /* stop_times.txt in Resources */,
+				149778731F367BC0001B6A2D /* shapes.txt in Resources */,
+				1497786D1F367BC0001B6A2D /* fare_rules.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,8 +573,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149778401F367B3F001B6A2D /* System.swift in Sources */,
 				14F88B981F35C0B40009EC63 /* ViewController.swift in Sources */,
+				149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
+				149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */,
+				1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */,
+				1497783A1F367B31001B6A2D /* MapFilter.swift in Sources */,
+				1497783E1F367B3A001B6A2D /* Shape.swift in Sources */,
+				149778891F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
+				149778931F367ECA001B6A2D /* AlertTableViewController.swift in Sources */,
+				149778341F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
+				149778911F367EC4001B6A2D /* AlertTableViewCell.swift in Sources */,
+				1497783C1F367B36001B6A2D /* Route.swift in Sources */,
 				14F88B961F35C0B40009EC63 /* AppDelegate.swift in Sources */,
+				149778301F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
+				149778421F367B47001B6A2D /* MetraDownloadTask.swift in Sources */,
+				1497788D1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +604,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1497788E1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
 				14F88BBF1F35C0DB0009EC63 /* TodayViewController.swift in Sources */,
+				1497788A1F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
+				1497782D1F367AFF001B6A2D /* MapViewController.swift in Sources */,
+				149778311F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
+				149778431F367B4E001B6A2D /* FilterTableViewController.swift in Sources */,
+				149778441F367B4E001B6A2D /* MapFilter.swift in Sources */,
+				149778451F367B4E001B6A2D /* Route.swift in Sources */,
+				149778351F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
+				149778471F367B4E001B6A2D /* System.swift in Sources */,
+				149778481F367B4E001B6A2D /* MetraDownloadTask.swift in Sources */,
+				149778461F367B4E001B6A2D /* Shape.swift in Sources */,
+				149778831F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +624,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1497784D1F367B4F001B6A2D /* System.swift in Sources */,
 				14F88BD41F35C1110009EC63 /* ViewController.swift in Sources */,
+				149778841F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
+				149778491F367B4F001B6A2D /* FilterTableViewController.swift in Sources */,
+				1497782E1F367AFF001B6A2D /* MapViewController.swift in Sources */,
+				1497784A1F367B4F001B6A2D /* MapFilter.swift in Sources */,
+				1497784C1F367B4F001B6A2D /* Shape.swift in Sources */,
+				1497788B1F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
+				149778361F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
+				1497784B1F367B4F001B6A2D /* Route.swift in Sources */,
 				14F88BD21F35C1110009EC63 /* AppDelegate.swift in Sources */,
+				149778321F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
+				1497784E1F367B4F001B6A2D /* MetraDownloadTask.swift in Sources */,
+				1497788F1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
