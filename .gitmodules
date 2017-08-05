@@ -1,0 +1,3 @@
+[submodule "/Users/andrewfinke/Projects/Metra/3rd Party/CSV"]
+	path = /Users/andrewfinke/Projects/Metra/3rd Party/CSV
+	url = git@github.com:yaslab/CSV.swift.git
