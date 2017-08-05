@@ -96,7 +96,6 @@ class AlertsTableViewController: UITableViewController {
                     if range.location != NSNotFound {
                         bridged = bridged.substring(from: range.location + 3) as NSString
                     }
-                    print(alert.urlString)
                     self.alerts[InformedEntity(entity: transitInformedEntitity)]!.append(bridged as String)
                 }
             }
