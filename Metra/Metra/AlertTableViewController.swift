@@ -14,7 +14,7 @@ class AlertsTableViewController: UITableViewController {
 
     // MARK: - Types
 
-    enum InformedEntity: Int {
+    enum SortedInformedEntity: Int {
         case agency = 0
         case trip, stop, route, other
 
@@ -43,13 +43,13 @@ class AlertsTableViewController: UITableViewController {
             }
         }
 
-        static var all: [InformedEntity] = [.agency, .route, .trip, .stop, .other]
+        static var all: [SortedInformedEntity] = [.agency, .route, .trip, .stop, .other]
     }
 
     // MARK: - Properties
 
-    private var alerts = [InformedEntity: [String]]()
-    private var sortedSections: [InformedEntity] {
+    private var alerts = [SortedInformedEntity: [String]]()
+    private var sortedSections: [SortedInformedEntity] {
         return alerts.keys.sorted(by: { (lhs, rhs) -> Bool in
             lhs.rawValue < rhs.rawValue
         })
@@ -85,7 +85,7 @@ class AlertsTableViewController: UITableViewController {
         navigationItem.rightBarButtonItem = loadingBarButtonItem
 
         MetraDownloadTask.fetch(feed: .alerts) { (entities) in
-            for entity in InformedEntity.all {
+            for entity in SortedInformedEntity.all {
                 self.alerts[entity] = []
             }
             for entity in entities ?? [] {
@@ -97,10 +97,10 @@ class AlertsTableViewController: UITableViewController {
                     if range.location != NSNotFound {
                         bridged = bridged.substring(from: range.location + 3) as NSString
                     }
-                    self.alerts[InformedEntity(entity: transitInformedEntitity)]!.append(bridged as String)
+                    self.alerts[SortedInformedEntity(entity: transitInformedEntitity)]!.append(bridged as String)
                 }
             }
-            for entity in InformedEntity.all {
+            for entity in SortedInformedEntity.all {
                 let alerts = self.alerts[entity]
                 if alerts?.count == 0 {
                     self.alerts[entity] = nil

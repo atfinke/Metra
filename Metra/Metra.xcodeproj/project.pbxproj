@@ -912,7 +912,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Metra;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -931,7 +931,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Metra;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
