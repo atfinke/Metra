@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length identifier_name
 /**
  A definition (or update) of an entity in the transit feed. If the entity is not being deleted, exactly one of 'trip_update', 'vehicle' and 'alert' fields should be populated.
  */

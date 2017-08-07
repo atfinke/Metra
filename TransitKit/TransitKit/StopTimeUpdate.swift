@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /**
  Realtime update for arrival and/or departure events for a given stop on a trip. Please also refer to the general discussion of stop time updates in the TripDescriptor and trip updates entities documentation.
 

@@ -33,7 +33,8 @@ class FilterTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         if indexPath.section == 0 {
             cell.textLabel?.text = System.shared.routes[indexPath.row].name
-            cell.accessoryType = MapFilter.shouldHide(routeID: System.shared.routes[indexPath.row].name) ? .none : .checkmark
+            let shouldHideRoute = MapFilter.shouldHide(routeID: System.shared.routes[indexPath.row].name)
+            cell.accessoryType = shouldHideRoute ? .none : .checkmark
         } else {
             cell.textLabel?.text = "Show Paths"
             cell.accessoryType = MapFilter.shouldHidePath() ? .none : .checkmark
@@ -67,7 +68,7 @@ class FilterTableViewController: UITableViewController {
         }
 
         feedback.selectionChanged()
-        
+
         updatedFilters?()
     }
 }

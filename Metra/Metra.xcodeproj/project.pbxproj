@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14550E751F37B62B00872B7B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14550E741F37B62B00872B7B /* SnapshotHelper.swift */; };
+		147BC6FF1F36F887001F5FAB /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147BC6F01F36F7D5001F5FAB /* CSV.framework */; };
+		147BC7001F36F887001F5FAB /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147BC6F01F36F7D5001F5FAB /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468E1F36E98B00AFF585 /* Fabric.framework */; };
+		148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468F1F36E98B00AFF585 /* Crashlytics.framework */; };
 		1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
-		1497782D1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
 		1497782E1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
 		149778301F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
-		149778311F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
 		149778321F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
 		149778341F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
-		149778351F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
 		149778361F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
 		149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
 		1497783A1F367B31001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
@@ -22,12 +24,6 @@
 		1497783E1F367B3A001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
 		149778401F367B3F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
 		149778421F367B47001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
-		149778431F367B4E001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
-		149778441F367B4E001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
-		149778451F367B4E001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
-		149778461F367B4E001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
-		149778471F367B4E001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
-		149778481F367B4E001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
 		149778491F367B4F001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
 		1497784A1F367B4F001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
 		1497784B1F367B4F001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
@@ -35,67 +31,119 @@
 		1497784D1F367B4F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
 		1497784E1F367B4F001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
 		1497785F1F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
-		149778601F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
 		149778611F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
 		149778621F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
-		149778631F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
 		149778641F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
 		149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
-		149778661F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
 		149778671F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
 		149778681F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
-		149778691F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
 		1497786A1F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
 		1497786B1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
-		1497786C1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
 		1497786D1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
 		1497786E1F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
-		1497786F1F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
 		149778701F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
 		149778711F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
-		149778721F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
 		149778731F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
 		149778741F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
-		149778751F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
 		149778761F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
 		149778771F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
-		149778781F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
 		149778791F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
 		1497787A1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
-		1497787B1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
 		1497787C1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
 		1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
-		1497787F1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
 		149778801F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
 		149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
-		149778831F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
 		149778841F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
-		149778871F367CD8001B6A2D /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149778861F367CD8001B6A2D /* CSV.framework */; };
 		149778891F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
-		1497788A1F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
 		1497788B1F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
 		1497788D1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
-		1497788E1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
 		1497788F1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
 		149778911F367EC4001B6A2D /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778901F367EC4001B6A2D /* AlertTableViewCell.swift */; };
 		149778931F367ECA001B6A2D /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778921F367ECA001B6A2D /* AlertTableViewController.swift */; };
+		14D410361F37BC2E008FC59A /* TransitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D410351F37BC22008FC59A /* TransitKit.framework */; };
+		14D410371F37BC2E008FC59A /* TransitKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14D410351F37BC22008FC59A /* TransitKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14F88B961F35C0B40009EC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88B951F35C0B40009EC63 /* AppDelegate.swift */; };
-		14F88B981F35C0B40009EC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88B971F35C0B40009EC63 /* ViewController.swift */; };
 		14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B991F35C0B40009EC63 /* Main.storyboard */; };
 		14F88B9D1F35C0B50009EC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B9C1F35C0B50009EC63 /* Assets.xcassets */; };
 		14F88BA01F35C0B50009EC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */; };
 		14F88BAE1F35C0C20009EC63 /* MetraScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BAD1F35C0C20009EC63 /* MetraScreenshots.swift */; };
-		14F88BBF1F35C0DB0009EC63 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BBE1F35C0DB0009EC63 /* TodayViewController.swift */; };
-		14F88BC21F35C0DB0009EC63 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88BC01F35C0DB0009EC63 /* MainInterface.storyboard */; };
-		14F88BC61F35C0DB0009EC63 /* MetraToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14F88BB91F35C0DB0009EC63 /* MetraToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		14F88BD21F35C1110009EC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BD11F35C1110009EC63 /* AppDelegate.swift */; };
 		14F88BD41F35C1110009EC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BD31F35C1110009EC63 /* ViewController.swift */; };
 		14F88BD71F35C1110009EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88BD51F35C1110009EC63 /* Main.storyboard */; };
 		14F88BD91F35C1120009EC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F88BD81F35C1120009EC63 /* Assets.xcassets */; };
-		14F88C021F35C1E70009EC63 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14F88C011F35C1E70009EC63 /* NotificationCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		147BC6ED1F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CC61D0BCA2A0057A1C1;
+			remoteInfo = "CSV-macOS";
+		};
+		147BC6EF1F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8C811D0BC7BB0057A1C1;
+			remoteInfo = "CSV-iOS";
+		};
+		147BC6F11F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CE81D0BCD0B0057A1C1;
+			remoteInfo = "CSV-tvOS";
+		};
+		147BC6F31F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CB51D0BC98B0057A1C1;
+			remoteInfo = "CSV-watchOS";
+		};
+		147BC6F51F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CCF1D0BCA2A0057A1C1;
+			remoteInfo = "CSVTests-macOS";
+		};
+		147BC6F71F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8C8B1D0BC7BB0057A1C1;
+			remoteInfo = "CSVTests-iOS";
+		};
+		147BC6F91F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CF11D0BCD0B0057A1C1;
+			remoteInfo = "CSVTests-tvOS";
+		};
+		147BC7011F36F887001F5FAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7E8C801D0BC7BB0057A1C1;
+			remoteInfo = "CSV-iOS";
+		};
+		14D410341F37BC22008FC59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14F88BE81F35C1410009EC63;
+			remoteInfo = TransitKit;
+		};
+		14D410381F37BC2E008FC59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F88BE71F35C1410009EC63;
+			remoteInfo = TransitKit;
+		};
 		14F88BB01F35C0C20009EC63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14F88B8A1F35C0B40009EC63 /* Project object */;
@@ -103,30 +151,38 @@
 			remoteGlobalIDString = 14F88B911F35C0B40009EC63;
 			remoteInfo = Metra;
 		};
-		14F88BC41F35C0DB0009EC63 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14F88B8A1F35C0B40009EC63 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 14F88BB81F35C0DB0009EC63;
-			remoteInfo = MetraToday;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		14F88BCA1F35C0DB0009EC63 /* Embed App Extensions */ = {
+		147BC6FE1F36F866001F5FAB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 13;
+			dstSubfolderSpec = 10;
 			files = (
-				14F88BC61F35C0DB0009EC63 /* MetraToday.appex in Embed App Extensions */,
+				147BC7001F36F887001F5FAB /* CSV.framework in Embed Frameworks */,
+				14D410371F37BC2E008FC59A /* TransitKit.framework in Embed Frameworks */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1498884D1F36DA9D006EDFDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14550E741F37B62B00872B7B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSV.xcodeproj; path = "../../3rd Party/CSV/CSV.xcodeproj"; sourceTree = "<group>"; };
+		1483468E1F36E98B00AFF585 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		1483468F1F36E98B00AFF585 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		1497782B1F367AFF001B6A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+Filter.swift"; sourceTree = "<group>"; };
 		149778331F367B14001B6A2D /* MapViewController+MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapView.swift"; sourceTree = "<group>"; };
@@ -153,9 +209,12 @@
 		1497788C1F367DB3001B6A2D /* VehiclePinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePinView.swift; sourceTree = "<group>"; };
 		149778901F367EC4001B6A2D /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
 		149778921F367ECA001B6A2D /* AlertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
-		14F88B921F35C0B40009EC63 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D410161F37BAC9008FC59A /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = SOURCE_ROOT; };
+		14D410171F37BAC9008FC59A /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = SOURCE_ROOT; };
+		14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TransitKit.xcodeproj; path = ../../TransitKit/TransitKit.xcodeproj; sourceTree = "<group>"; };
+		14D4103C1F37C498008FC59A /* Deliverfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Deliverfile; sourceTree = SOURCE_ROOT; };
+		14F88B921F35C0B40009EC63 /* Metra (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metra (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88B951F35C0B40009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14F88B971F35C0B40009EC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14F88B9A1F35C0B40009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F88B9C1F35C0B50009EC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F88B9F1F35C0B50009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -163,17 +222,12 @@
 		14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetraScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88BAD1F35C0C20009EC63 /* MetraScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetraScreenshots.swift; sourceTree = "<group>"; };
 		14F88BAF1F35C0C20009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F88BB91F35C0DB0009EC63 /* MetraToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MetraToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F88BBE1F35C0DB0009EC63 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		14F88BC11F35C0DB0009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		14F88BC31F35C0DB0009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metra (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88BD11F35C1110009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F88BD31F35C1110009EC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14F88BD61F35C1110009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F88BD81F35C1120009EC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14F88BDA1F35C1120009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F88C011F35C1E70009EC63 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +235,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147BC6FF1F36F887001F5FAB /* CSV.framework in Frameworks */,
+				14D410361F37BC2E008FC59A /* TransitKit.framework in Frameworks */,
+				148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */,
+				148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,15 +246,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14F88BB61F35C0DB0009EC63 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				149778871F367CD8001B6A2D /* CSV.framework in Frameworks */,
-				14F88C021F35C1E70009EC63 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +259,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147BC6E41F36F7D5001F5FAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				147BC6EE1F36F7D5001F5FAB /* CSV.framework */,
+				147BC6F01F36F7D5001F5FAB /* CSV.framework */,
+				147BC6F21F36F7D5001F5FAB /* CSV.framework */,
+				147BC6F41F36F7D5001F5FAB /* CSV.framework */,
+				147BC6F61F36F7D5001F5FAB /* CSVTests-macOS.xctest */,
+				147BC6F81F36F7D5001F5FAB /* CSVTests-iOS.xctest */,
+				147BC6FA1F36F7D5001F5FAB /* CSVTests-tvOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		1497784F1F367B5D001B6A2D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +321,8 @@
 		149778531F367BA6001B6A2D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */,
+				147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */,
 				1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */,
 				149778541F367BC0001B6A2D /* GTFS */,
 			);
@@ -289,13 +354,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		14D4102B1F37BC22008FC59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14D410351F37BC22008FC59A /* TransitKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		14F88B891F35C0B40009EC63 = {
 			isa = PBXGroup;
 			children = (
 				1497784F1F367B5D001B6A2D /* Shared */,
 				14F88B941F35C0B40009EC63 /* Metra (iOS) */,
 				14F88BD01F35C1110009EC63 /* Metra (tvOS) */,
-				14F88BBD1F35C0DB0009EC63 /* MetraToday */,
 				14F88BAC1F35C0C20009EC63 /* MetraScreenshots */,
 				14F88B931F35C0B40009EC63 /* Products */,
 				149778851F367CD8001B6A2D /* Frameworks */,
@@ -305,9 +377,8 @@
 		14F88B931F35C0B40009EC63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14F88B921F35C0B40009EC63 /* Metra.app */,
+				14F88B921F35C0B40009EC63 /* Metra (iOS).app */,
 				14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */,
-				14F88BB91F35C0DB0009EC63 /* MetraToday.appex */,
 				14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */,
 			);
 			name = Products;
@@ -317,13 +388,14 @@
 			isa = PBXGroup;
 			children = (
 				14F88B951F35C0B40009EC63 /* AppDelegate.swift */,
-				14F88B971F35C0B40009EC63 /* ViewController.swift */,
 				149778901F367EC4001B6A2D /* AlertTableViewCell.swift */,
 				149778921F367ECA001B6A2D /* AlertTableViewController.swift */,
 				14F88B991F35C0B40009EC63 /* Main.storyboard */,
 				14F88B9C1F35C0B50009EC63 /* Assets.xcassets */,
 				14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */,
 				14F88BA11F35C0B50009EC63 /* Info.plist */,
+				1483468E1F36E98B00AFF585 /* Fabric.framework */,
+				1483468F1F36E98B00AFF585 /* Crashlytics.framework */,
 			);
 			name = "Metra (iOS)";
 			path = Metra;
@@ -332,21 +404,14 @@
 		14F88BAC1F35C0C20009EC63 /* MetraScreenshots */ = {
 			isa = PBXGroup;
 			children = (
+				14D4103C1F37C498008FC59A /* Deliverfile */,
+				14D410161F37BAC9008FC59A /* Fastfile */,
+				14D410171F37BAC9008FC59A /* Snapfile */,
+				14550E741F37B62B00872B7B /* SnapshotHelper.swift */,
 				14F88BAD1F35C0C20009EC63 /* MetraScreenshots.swift */,
 				14F88BAF1F35C0C20009EC63 /* Info.plist */,
 			);
 			path = MetraScreenshots;
-			sourceTree = "<group>";
-		};
-		14F88BBD1F35C0DB0009EC63 /* MetraToday */ = {
-			isa = PBXGroup;
-			children = (
-				14F88BBE1F35C0DB0009EC63 /* TodayViewController.swift */,
-				14F88BC01F35C0DB0009EC63 /* MainInterface.storyboard */,
-				14F88BC31F35C0DB0009EC63 /* Info.plist */,
-				14F88C001F35C1E70009EC63 /* Frameworks */,
-			);
-			path = MetraToday;
 			sourceTree = "<group>";
 		};
 		14F88BD01F35C1110009EC63 /* Metra (tvOS) */ = {
@@ -361,35 +426,30 @@
 			path = "Metra (tvOS)";
 			sourceTree = "<group>";
 		};
-		14F88C001F35C1E70009EC63 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				14F88C011F35C1E70009EC63 /* NotificationCenter.framework */,
-			);
-			name = Frameworks;
-			path = ..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		14F88B911F35C0B40009EC63 /* Metra */ = {
+		14F88B911F35C0B40009EC63 /* Metra (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 14F88BA41F35C0B50009EC63 /* Build configuration list for PBXNativeTarget "Metra" */;
+			buildConfigurationList = 14F88BA41F35C0B50009EC63 /* Build configuration list for PBXNativeTarget "Metra (iOS)" */;
 			buildPhases = (
+				14550E6D1F37B5A500872B7B /* Build Number */,
 				14F88B8E1F35C0B40009EC63 /* Sources */,
 				14F88B8F1F35C0B40009EC63 /* Frameworks */,
 				14F88B901F35C0B40009EC63 /* Resources */,
-				14F88BCA1F35C0DB0009EC63 /* Embed App Extensions */,
+				147BC6FE1F36F866001F5FAB /* Embed Frameworks */,
+				1405C82A1F37E60D0066B232 /* Swiftlint */,
+				1483468D1F36E94700AFF585 /* Fabric */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14F88BC51F35C0DB0009EC63 /* PBXTargetDependency */,
+				147BC7021F36F887001F5FAB /* PBXTargetDependency */,
+				14D410391F37BC2E008FC59A /* PBXTargetDependency */,
 			);
-			name = Metra;
+			name = "Metra (iOS)";
 			productName = Metra;
-			productReference = 14F88B921F35C0B40009EC63 /* Metra.app */;
+			productReference = 14F88B921F35C0B40009EC63 /* Metra (iOS).app */;
 			productType = "com.apple.product-type.application";
 		};
 		14F88BAA1F35C0C20009EC63 /* MetraScreenshots */ = {
@@ -410,23 +470,6 @@
 			productReference = 14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		14F88BB81F35C0DB0009EC63 /* MetraToday */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14F88BC71F35C0DB0009EC63 /* Build configuration list for PBXNativeTarget "MetraToday" */;
-			buildPhases = (
-				14F88BB51F35C0DB0009EC63 /* Sources */,
-				14F88BB61F35C0DB0009EC63 /* Frameworks */,
-				14F88BB71F35C0DB0009EC63 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MetraToday;
-			productName = MetraToday;
-			productReference = 14F88BB91F35C0DB0009EC63 /* MetraToday.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		14F88BCE1F35C1110009EC63 /* Metra (tvOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F88BDB1F35C1120009EC63 /* Build configuration list for PBXNativeTarget "Metra (tvOS)" */;
@@ -434,6 +477,7 @@
 				14F88BCB1F35C1110009EC63 /* Sources */,
 				14F88BCC1F35C1110009EC63 /* Frameworks */,
 				14F88BCD1F35C1110009EC63 /* Resources */,
+				1498884D1F36DA9D006EDFDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -465,11 +509,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 14F88B911F35C0B40009EC63;
 					};
-					14F88BB81F35C0DB0009EC63 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 72S993BNAV;
-						ProvisioningStyle = Automatic;
-					};
 					14F88BCE1F35C1110009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
@@ -488,15 +527,83 @@
 			mainGroup = 14F88B891F35C0B40009EC63;
 			productRefGroup = 14F88B931F35C0B40009EC63 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 147BC6E41F36F7D5001F5FAB /* Products */;
+					ProjectRef = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+				},
+				{
+					ProductGroup = 14D4102B1F37BC22008FC59A /* Products */;
+					ProjectRef = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				14F88B911F35C0B40009EC63 /* Metra */,
-				14F88BAA1F35C0C20009EC63 /* MetraScreenshots */,
-				14F88BB81F35C0DB0009EC63 /* MetraToday */,
+				14F88B911F35C0B40009EC63 /* Metra (iOS) */,
 				14F88BCE1F35C1110009EC63 /* Metra (tvOS) */,
+				14F88BAA1F35C0C20009EC63 /* MetraScreenshots */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		147BC6EE1F36F7D5001F5FAB /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 147BC6ED1F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6F01F36F7D5001F5FAB /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 147BC6EF1F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6F21F36F7D5001F5FAB /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 147BC6F11F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6F41F36F7D5001F5FAB /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 147BC6F31F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6F61F36F7D5001F5FAB /* CSVTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-macOS.xctest";
+			remoteRef = 147BC6F51F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6F81F36F7D5001F5FAB /* CSVTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-iOS.xctest";
+			remoteRef = 147BC6F71F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		147BC6FA1F36F7D5001F5FAB /* CSVTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-tvOS.xctest";
+			remoteRef = 147BC6F91F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14D410351F37BC22008FC59A /* TransitKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TransitKit.framework;
+			remoteRef = 14D410341F37BC22008FC59A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		14F88B901F35C0B40009EC63 /* Resources */ = {
@@ -527,25 +634,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		14F88BB71F35C0DB0009EC63 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1497786C1F367BC0001B6A2D /* fare_rules.txt in Resources */,
-				149778691F367BC0001B6A2D /* fare_attributes.txt in Resources */,
-				1497786F1F367BC0001B6A2D /* routes.txt in Resources */,
-				1497787F1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
-				149778631F367BC0001B6A2D /* calendar.txt in Resources */,
-				1497787B1F367BC0001B6A2D /* trips.txt in Resources */,
-				149778721F367BC0001B6A2D /* shapes.txt in Resources */,
-				14F88BC21F35C0DB0009EC63 /* MainInterface.storyboard in Resources */,
-				149778781F367BC0001B6A2D /* stops.txt in Resources */,
-				149778661F367BC0001B6A2D /* calendar_dates.txt in Resources */,
-				149778601F367BC0001B6A2D /* agency.txt in Resources */,
-				149778751F367BC0001B6A2D /* stop_times.txt in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		14F88BCD1F35C1110009EC63 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,13 +656,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1405C82A1F37E60D0066B232 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		14550E6D1F37B5A500872B7B /* Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
+		};
+		1483468D1F36E94700AFF585 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 80c3b2d37f1bca4e182e7fbf7976e6f069340b4d d0bc3219cfdb92e9f323b3c5f0de3ef22835401f8cda5fc54391593a8c285431";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14F88B8E1F35C0B40009EC63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				149778401F367B3F001B6A2D /* System.swift in Sources */,
-				14F88B981F35C0B40009EC63 /* ViewController.swift in Sources */,
 				149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
 				149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */,
 				1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */,
@@ -597,26 +729,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F88BAE1F35C0C20009EC63 /* MetraScreenshots.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		14F88BB51F35C0DB0009EC63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1497788E1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
-				14F88BBF1F35C0DB0009EC63 /* TodayViewController.swift in Sources */,
-				1497788A1F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
-				1497782D1F367AFF001B6A2D /* MapViewController.swift in Sources */,
-				149778311F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
-				149778431F367B4E001B6A2D /* FilterTableViewController.swift in Sources */,
-				149778441F367B4E001B6A2D /* MapFilter.swift in Sources */,
-				149778451F367B4E001B6A2D /* Route.swift in Sources */,
-				149778351F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
-				149778471F367B4E001B6A2D /* System.swift in Sources */,
-				149778481F367B4E001B6A2D /* MetraDownloadTask.swift in Sources */,
-				149778461F367B4E001B6A2D /* Shape.swift in Sources */,
-				149778831F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
+				14550E751F37B62B00872B7B /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,15 +757,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		147BC7021F36F887001F5FAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CSV-iOS";
+			targetProxy = 147BC7011F36F887001F5FAB /* PBXContainerItemProxy */;
+		};
+		14D410391F37BC2E008FC59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitKit;
+			targetProxy = 14D410381F37BC2E008FC59A /* PBXContainerItemProxy */;
+		};
 		14F88BB11F35C0C20009EC63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 14F88B911F35C0B40009EC63 /* Metra */;
+			target = 14F88B911F35C0B40009EC63 /* Metra (iOS) */;
 			targetProxy = 14F88BB01F35C0C20009EC63 /* PBXContainerItemProxy */;
-		};
-		14F88BC51F35C0DB0009EC63 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 14F88BB81F35C0DB0009EC63 /* MetraToday */;
-			targetProxy = 14F88BC41F35C0DB0009EC63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -671,14 +789,6 @@
 				14F88B9F1F35C0B50009EC63 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		14F88BC01F35C0DB0009EC63 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14F88BC11F35C0DB0009EC63 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 		14F88BD51F35C1110009EC63 /* Main.storyboard */ = {
@@ -792,8 +902,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 72S993BNAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Metra/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -807,7 +923,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72S993BNAV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Metra/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -821,6 +942,7 @@
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				INFOPLIST_FILE = MetraScreenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DTARGET_SCREENSHOTS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.MetraScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -834,36 +956,11 @@
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				INFOPLIST_FILE = MetraScreenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DTARGET_SCREENSHOTS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.MetraScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Metra;
-			};
-			name = Release;
-		};
-		14F88BC81F35C0DB0009EC63 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 72S993BNAV;
-				INFOPLIST_FILE = MetraToday/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra.MetraToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		14F88BC91F35C0DB0009EC63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 72S993BNAV;
-				INFOPLIST_FILE = MetraToday/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra.MetraToday;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -872,6 +969,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				INFOPLIST_FILE = "Metra (tvOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -880,7 +978,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -897,7 +995,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 10.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
@@ -913,7 +1011,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		14F88BA41F35C0B50009EC63 /* Build configuration list for PBXNativeTarget "Metra" */ = {
+		14F88BA41F35C0B50009EC63 /* Build configuration list for PBXNativeTarget "Metra (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				14F88BA51F35C0B50009EC63 /* Debug */,
@@ -927,15 +1025,6 @@
 			buildConfigurations = (
 				14F88BB31F35C0C20009EC63 /* Debug */,
 				14F88BB41F35C0C20009EC63 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		14F88BC71F35C0DB0009EC63 /* Build configuration list for PBXNativeTarget "MetraToday" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				14F88BC81F35C0DB0009EC63 /* Debug */,
-				14F88BC91F35C0DB0009EC63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

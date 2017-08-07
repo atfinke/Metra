@@ -10,5 +10,6 @@ import Foundation
 
 /// Cause of this alert.
 public enum TSTRTCause: Int {
-    case unknown = 0, other, technicalProblem, strike, demonstration, accident, holiday, weather, maintenance, construction, policeActivity, medicalEmergency
+    case unknown = 0, other, technicalProblem, strike, demonstration, accident
+    case holiday, weather, maintenance, construction, policeActivity, medicalEmergency
 }

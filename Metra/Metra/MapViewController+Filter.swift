@@ -28,7 +28,8 @@ extension MapViewController: UIPopoverPresentationControllerDelegate {
         return .none
     }
 
-    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+    func adaptivePresentationStyle(for controller: UIPresentationController,
+                                   traitCollection: UITraitCollection) -> UIModalPresentationStyle {
         return .none
     }
 }

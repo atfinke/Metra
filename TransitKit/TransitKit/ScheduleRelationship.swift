@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+// swiftlint:disable line_length
 /// The relation between this StopTime and the static schedule.
 ///
 /// - scheduled: The vehicle is proceeding in accordance with its static schedule of stops, although not necessarily according to the times of the schedule. This is the default behavior. At least one of arrival and departure must be provided. If the schedule for this stop contains both arrival and departure times then so must this update.

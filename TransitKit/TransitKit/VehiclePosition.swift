@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /// Realtime positioning information for a given vehicle.
 public struct TSTRTVehiclePosition {
 

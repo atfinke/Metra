@@ -14,6 +14,7 @@ extension String {
     }
 }
 
+// swiftlint:disable identifier_name
 extension UIColor {
     convenience init(hex: Int) {
         self.init(hex: hex, a: 1.0)

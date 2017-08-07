@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /// A time interval. The interval is considered active at time t if t is greater than or equal to the start time and less than the end time.
 public struct TSTRTTimeRange {
 

@@ -9,6 +9,7 @@
 import UIKit
 import TransitKit
 
+// swiftlint:disable line_length
 class AlertsTableViewController: UITableViewController {
 
     // MARK: - Types
@@ -112,7 +113,9 @@ class AlertsTableViewController: UITableViewController {
                 self.navigationItem.rightBarButtonItem = self.reloadBarButtonItem
 
                 if entities == nil {
-                    let alertController = UIAlertController(title: "Connection Issue", message: "There was an issue connecting to Metra's servers.", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Connection Issue",
+                                                            message: "There was an issue connecting to Metra's servers.",
+                                                            preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self.present(alertController, animated: true, completion: nil)
                 }
@@ -146,5 +149,5 @@ class AlertsTableViewController: UITableViewController {
         cell.titleLabel.text = alert
         return cell
     }
-    
+
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /**
  Timing information for a single predicted event (either arrival or departure). Timing consists of delay and/or estimated time, and uncertainty.
 

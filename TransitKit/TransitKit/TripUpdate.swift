@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /**
  Realtime update on the progress of a vehicle along a trip. Please also refer to the general discussion of the trip updates entities.
 

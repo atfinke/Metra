@@ -22,6 +22,7 @@ class VehiclePinView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // swiftlint:disable line_length
     override func draw(_ rect: CGRect) {
         color.setFill()
 
@@ -51,5 +52,5 @@ class VehiclePinView: UIView {
         layer.shadowRadius = 2.5
         layer.shadowPath = bezierPath.cgPath
     }
-    
+
 }

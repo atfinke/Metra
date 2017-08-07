@@ -90,15 +90,25 @@ public struct TSTRTMetraParser: TSTRTParser {
             effect = TSTRTEffect(rawValue: effectObject)
         }
         var headerText: String?
-        if let headerTextObject = alertObject[.header_text] as? [String: [[String: Any]]], let translationArray = headerTextObject[.translation], let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
+        if let headerTextObject = alertObject[.header_text] as? [String: [[String: Any]]],
+            let translationArray = headerTextObject[.translation],
+            let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
             headerText = englishTranslation[.text] as? String
         }
         var descriptionText: String?
-        if let descriptionTextObject = alertObject[.description_text] as? [String: [[String: Any]]], let translationArray = descriptionTextObject[.translation], let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
+        if let descriptionTextObject = alertObject[.description_text] as? [String: [[String: Any]]],
+            let translationArray = descriptionTextObject[.translation],
+            let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
             descriptionText = englishTranslation[.text] as? String
         }
 
-        return TSTRTAlert(activePeriods: activePeriods, informedEntities: informedEntities, cause: cause, effect: effect, urlString: nil, headerText: headerText, descriptionText: descriptionText)
+        return TSTRTAlert(activePeriods: activePeriods,
+                          informedEntities: informedEntities,
+                          cause: cause,
+                          effect: effect,
+                          urlString: nil,
+                          headerText: headerText,
+                          descriptionText: descriptionText)
     }
 
     private static func parse(tripUpdateObject: [String: Any]) -> TSTRTTripUpdate? {
@@ -123,7 +133,11 @@ public struct TSTRTMetraParser: TSTRTParser {
 
         let delay = tripUpdateObject[.delay] as? Int
 
-        return TSTRTTripUpdate(trip: trip, vehicle: vehicle, stopTimeUpdates: stopTimeUpdates, date: timestamp, delay: delay)
+        return TSTRTTripUpdate(trip: trip,
+                               vehicle: vehicle,
+                               stopTimeUpdates: stopTimeUpdates,
+                               date: timestamp,
+                               delay: delay)
     }
 
     private static func parse(vehiclePositionObject: [String: Any]) -> TSTRTVehiclePosition? {
@@ -149,7 +163,15 @@ public struct TSTRTMetraParser: TSTRTParser {
             position = TSTRTPosition(latitude: latitude, longitude: longitude, bearing: nil, odometer: nil, speed: nil)
         }
 
-        return TSTRTVehiclePosition(trip: trip, vehicle: vehicle, position: position, currentStopSequence: nil, stopID: nil, currentStatus: currentStatus, timestamp: timestamp, congestionLevel: nil, occupancyStatus: nil)
+        return TSTRTVehiclePosition(trip: trip,
+                                    vehicle: vehicle,
+                                    position: position,
+                                    currentStopSequence: nil,
+                                    stopID: nil,
+                                    currentStatus: currentStatus,
+                                    timestamp: timestamp,
+                                    congestionLevel: nil,
+                                    occupancyStatus: nil)
     }
 
     // MARK: - Parsing Shared Objects
@@ -163,7 +185,8 @@ public struct TSTRTMetraParser: TSTRTParser {
             return .routeType(routeType)
         } else if let stopID = informedEntityObject[.stop_id] as? String, stopID != "<null>" {
             return .stopID(stopID)
-        } else if let tripObject = informedEntityObject[.trip] as? [String: Any], let trip = parse(tripObject: tripObject) {
+        } else if let tripObject = informedEntityObject[.trip] as? [String: Any],
+            let trip = parse(tripObject: tripObject) {
             return .trip(trip)
         }
         return nil
@@ -195,7 +218,11 @@ public struct TSTRTMetraParser: TSTRTParser {
         let stopID = stopTimeUpdateObject[.stop_id] as? String
         let stopSequence = stopTimeUpdateObject[.stop_sequence] as? Int
 
-        return TSTRTStopTimeUpdate(stopSequence: stopSequence, stopID: stopID, arrival: arrival, departure: departure, scheduleRelationship: scheduleRelationship)
+        return TSTRTStopTimeUpdate(stopSequence: stopSequence,
+                                   stopID: stopID,
+                                   arrival: arrival,
+                                   departure: departure,
+                                   scheduleRelationship: scheduleRelationship)
     }
 
     private static func parse(stopTimeEventObject: [String: Any]) -> TSTRTStopTimeEvent {
@@ -232,7 +259,12 @@ public struct TSTRTMetraParser: TSTRTParser {
         let startDate = tripObject[.start_date] as? String
         let startTime = tripObject[.start_time] as? String
 
-        return TSTRTTripDescriptor(tripID: tripID, routeID: routeID, directionID: nil, startTime: startTime, startDate: startDate, scheduleRelationship: scheduleRelationship)
+        return TSTRTTripDescriptor(tripID: tripID,
+                                   routeID: routeID,
+                                   directionID: nil,
+                                   startTime: startTime,
+                                   startDate: startDate,
+                                   scheduleRelationship: scheduleRelationship)
     }
 
     private static func parse(vehicleObject: [String: Any]) -> TSTRTVehicleDescriptor? {

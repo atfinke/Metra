@@ -10,5 +10,6 @@ import Foundation
 
 /// The effect of this problem on the affected entity.
 public enum TSTRTEffect: Int {
-    case noService = 0, reducedService, significantDelays, detour, additionalService, modifiedService, other, unknown,stopMoved
+    case noService = 0, reducedService, significantDelays, detour
+    case additionalService, modifiedService, other, unknown, stopMoved
 }

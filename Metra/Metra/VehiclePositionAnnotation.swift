@@ -72,8 +72,8 @@ class VehiclePositionAnnotation: MKPointAnnotation {
         label.textColor = textColor
         label.text = vehiclePosition.vehicle?.label
         annotationView.addSubview(label)
-        
+
         return annotationView
     }
-    
+
 }

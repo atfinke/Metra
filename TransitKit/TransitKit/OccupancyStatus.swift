@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /// The degree of passenger occupancy for the vehicle.
 ///
 /// - empty: The vehicle is considered empty by most measures, and has few or no passengers onboard, but is still accepting passengers.

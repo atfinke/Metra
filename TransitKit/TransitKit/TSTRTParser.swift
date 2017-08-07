@@ -16,6 +16,7 @@ public enum TSTRTParserError: Error {
     case json, jsonCast
 }
 
+// swiftlint:disable identifier_name
 enum TSTRTParserKey: String {
     case trip_update, alert, vehicle, id
     case current_status, position, timestamp, trip

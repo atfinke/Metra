@@ -46,7 +46,7 @@ struct MetraDownloadTask {
 
     // MARK: - Fetching
 
-    static func fetch(feed: Feed, completion: @escaping ([TSTRTFeedEntity]?) -> ()) {
+    static func fetch(feed: Feed, completion: @escaping ([TSTRTFeedEntity]?) -> Void) {
         let request: URLRequest
 
         switch feed {
@@ -58,7 +58,7 @@ struct MetraDownloadTask {
             request = tripUpdatesRequest
         }
 
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        let task = URLSession.shared.dataTask(with: request) { (data, _, _) in
             if let data = data, let entites = TSTRTMetraParser.parse(data: data).entities {
                 completion(entites)
             } else {

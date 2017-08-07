@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 /// An alert, indicating some sort of incident in the public transit network.
 public struct TSTRTAlert {
     /**

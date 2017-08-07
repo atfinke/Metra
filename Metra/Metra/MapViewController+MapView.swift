@@ -18,9 +18,12 @@ extension MapViewController: MKMapViewDelegate, CLLocationManagerDelegate {
     }
 
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
-        let polyLineRenderer = MKPolylineRenderer(overlay: overlay)
+        guard let overlay = overlay as? RoutePolyline else {
+            fatalError()
+        }
 
-        let color = System.shared.color(for: (overlay as! RoutePolyline).routeID) ?? UIColor.white
+        let polyLineRenderer = MKPolylineRenderer(overlay: overlay)
+        let color = System.shared.color(for: overlay.routeID) ?? UIColor.white
         polyLineRenderer.strokeColor = color
         polyLineRenderer.lineWidth = 2.0
 

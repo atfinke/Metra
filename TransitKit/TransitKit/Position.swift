@@ -9,6 +9,7 @@
 import Foundation
 import CoreLocation
 
+// swiftlint:disable line_length
 /// A geographic position of a vehicle.
 public struct TSTRTPosition {
 

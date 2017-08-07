@@ -6,7 +6,6 @@
 //  Copyright © 2017 Andrew Finke. All rights reserved.
 //
 
-import CSV
 import UIKit
 
 struct System {

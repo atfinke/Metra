@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        Fabric.with([Crashlytics.self])
         System.shared.start()
 
         let metraColor = UIColor(red: 11.0/255.0, green: 86.0/255.0, blue: 162.0/255.0, alpha: 1.0)
@@ -22,8 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().barTintColor = metraColor
 
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.white], for: .selected)
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(red: 230.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, alpha: 1.0)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([
+            NSForegroundColorAttributeName: UIColor.white
+            ], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([
+            NSForegroundColorAttributeName: UIColor(red: 230.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, alpha: 1.0)
+            ], for: .normal)
 
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         UINavigationBar.appearance().tintColor = UIColor.white
@@ -37,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.tabBar.items?[0].image = #imageLiteral(resourceName: "MapEmpty").withRenderingMode(.alwaysOriginal)
         tabBarController.tabBar.items?[1].selectedImage = #imageLiteral(resourceName: "AlertFilled")
         tabBarController.tabBar.items?[1].image = #imageLiteral(resourceName: "AlertEmpty").withRenderingMode(.alwaysOriginal)
-        
+
         return true
     }
 

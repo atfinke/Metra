@@ -8,6 +8,7 @@
 
 import Foundation
 
+// swiftlint:disable line_length identifier_name
 /// Identification information for the vehicle performing the trip.
 public struct TSTRTVehicleDescriptor {
 

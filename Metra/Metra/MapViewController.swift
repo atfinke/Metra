@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import TransitKit
 
-class MapViewController: UIViewController  {
+class MapViewController: UIViewController {
 
     // MARK: - Interface
 
@@ -23,6 +23,9 @@ class MapViewController: UIViewController  {
             mapView.region = region
             mapView.delegate = self
 
+            if ProcessInfo.processInfo.arguments.contains("TARGET_SCREENSHOTS") {
+                mapView.showsUserLocation = true
+            }
             // mapView.mapType = .mutedStandard
         }
     }
@@ -51,10 +54,16 @@ class MapViewController: UIViewController  {
         reloadBarButtonItem = navigationItem.rightBarButtonItem
 
         fetchTrainPositions()
-        Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(fetchTrainPositions), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 30.0,
+                             target: self,
+                             selector: #selector(fetchTrainPositions),
+                             userInfo: nil,
+                             repeats: true)
 
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
+        if ProcessInfo.processInfo.arguments.contains("TARGET_SCREENSHOTS") {
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
 
     // MARK: - Annotations
@@ -74,7 +83,11 @@ class MapViewController: UIViewController  {
                 self.navigationItem.rightBarButtonItem = self.reloadBarButtonItem
 
                 if entities == nil {
-                    let alertController = UIAlertController(title: "Connection Issue", message: "There was an issue connecting to Metra's servers.", preferredStyle: .alert)
+                    // swiftlint:disable line_length
+                    let alertController = UIAlertController(title: "Connection Issue",
+                                                            message: "There was an issue connecting to Metra's servers.",
+                                                            preferredStyle: .alert)
+
                     alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     self.present(alertController, animated: true, completion: nil)
                 }
@@ -132,5 +145,5 @@ class MapViewController: UIViewController  {
             }
         }
     }
-    
+
 }
