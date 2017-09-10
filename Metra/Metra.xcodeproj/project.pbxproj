@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1409479D1F65D05000516BE3 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140947921F65D03D00516BE3 /* CSV.framework */; };
+		1409479E1F65D05000516BE3 /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 140947921F65D03D00516BE3 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		140947A31F65D06D00516BE3 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 140947A11F65D06D00516BE3 /* fabric.apikey */; };
 		14550E751F37B62B00872B7B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14550E741F37B62B00872B7B /* SnapshotHelper.swift */; };
-		147BC6FF1F36F887001F5FAB /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147BC6F01F36F7D5001F5FAB /* CSV.framework */; };
-		147BC7001F36F887001F5FAB /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147BC6F01F36F7D5001F5FAB /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468E1F36E98B00AFF585 /* Fabric.framework */; };
 		148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468F1F36E98B00AFF585 /* Crashlytics.framework */; };
 		1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
@@ -74,58 +75,58 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		147BC6ED1F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		1409478F1F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8CC61D0BCA2A0057A1C1;
 			remoteInfo = "CSV-macOS";
 		};
-		147BC6EF1F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		140947911F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8C811D0BC7BB0057A1C1;
 			remoteInfo = "CSV-iOS";
 		};
-		147BC6F11F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		140947931F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8CE81D0BCD0B0057A1C1;
 			remoteInfo = "CSV-tvOS";
 		};
-		147BC6F31F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		140947951F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8CB51D0BC98B0057A1C1;
 			remoteInfo = "CSV-watchOS";
 		};
-		147BC6F51F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		140947971F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8CCF1D0BCA2A0057A1C1;
 			remoteInfo = "CSVTests-macOS";
 		};
-		147BC6F71F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		140947991F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8C8B1D0BC7BB0057A1C1;
 			remoteInfo = "CSVTests-iOS";
 		};
-		147BC6F91F36F7D5001F5FAB /* PBXContainerItemProxy */ = {
+		1409479B1F65D03D00516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0E7E8CF11D0BCD0B0057A1C1;
 			remoteInfo = "CSVTests-tvOS";
 		};
-		147BC7011F36F887001F5FAB /* PBXContainerItemProxy */ = {
+		1409479F1F65D05000516BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 0E7E8C801D0BC7BB0057A1C1;
 			remoteInfo = "CSV-iOS";
@@ -160,8 +161,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				147BC7001F36F887001F5FAB /* CSV.framework in Embed Frameworks */,
 				14D410371F37BC2E008FC59A /* TransitKit.framework in Embed Frameworks */,
+				1409479E1F65D05000516BE3 /* CSV.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,8 +180,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		140947851F65D03D00516BE3 /* CSV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSV.xcodeproj; path = ../../External/CSV/CSV.xcodeproj; sourceTree = "<group>"; };
+		140947A11F65D06D00516BE3 /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = SOURCE_ROOT; };
+		140947A21F65D06D00516BE3 /* fabric.buildsecret */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = SOURCE_ROOT; };
 		14550E741F37B62B00872B7B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSV.xcodeproj; path = "../../3rd Party/CSV/CSV.xcodeproj"; sourceTree = "<group>"; };
 		1483468E1F36E98B00AFF585 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		1483468F1F36E98B00AFF585 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		1497782B1F367AFF001B6A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -213,7 +216,7 @@
 		14D410171F37BAC9008FC59A /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = SOURCE_ROOT; };
 		14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TransitKit.xcodeproj; path = ../../TransitKit/TransitKit.xcodeproj; sourceTree = "<group>"; };
 		14D4103C1F37C498008FC59A /* Deliverfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Deliverfile; sourceTree = SOURCE_ROOT; };
-		14F88B921F35C0B40009EC63 /* Metra (iOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metra (iOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F88B921F35C0B40009EC63 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88B951F35C0B40009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F88B9A1F35C0B40009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14F88B9C1F35C0B50009EC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -235,8 +238,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147BC6FF1F36F887001F5FAB /* CSV.framework in Frameworks */,
 				14D410361F37BC2E008FC59A /* TransitKit.framework in Frameworks */,
+				1409479D1F65D05000516BE3 /* CSV.framework in Frameworks */,
 				148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */,
 				148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */,
 			);
@@ -259,16 +262,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		147BC6E41F36F7D5001F5FAB /* Products */ = {
+		140947861F65D03D00516BE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				147BC6EE1F36F7D5001F5FAB /* CSV.framework */,
-				147BC6F01F36F7D5001F5FAB /* CSV.framework */,
-				147BC6F21F36F7D5001F5FAB /* CSV.framework */,
-				147BC6F41F36F7D5001F5FAB /* CSV.framework */,
-				147BC6F61F36F7D5001F5FAB /* CSVTests-macOS.xctest */,
-				147BC6F81F36F7D5001F5FAB /* CSVTests-iOS.xctest */,
-				147BC6FA1F36F7D5001F5FAB /* CSVTests-tvOS.xctest */,
+				140947901F65D03D00516BE3 /* CSV.framework */,
+				140947921F65D03D00516BE3 /* CSV.framework */,
+				140947941F65D03D00516BE3 /* CSV.framework */,
+				140947961F65D03D00516BE3 /* CSV.framework */,
+				140947981F65D03D00516BE3 /* CSVTests-macOS.xctest */,
+				1409479A1F65D03D00516BE3 /* CSVTests-iOS.xctest */,
+				1409479C1F65D03D00516BE3 /* CSVTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,8 +324,10 @@
 		149778531F367BA6001B6A2D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				140947A11F65D06D00516BE3 /* fabric.apikey */,
+				140947A21F65D06D00516BE3 /* fabric.buildsecret */,
+				140947851F65D03D00516BE3 /* CSV.xcodeproj */,
 				14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */,
-				147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */,
 				1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */,
 				149778541F367BC0001B6A2D /* GTFS */,
 			);
@@ -377,7 +382,7 @@
 		14F88B931F35C0B40009EC63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				14F88B921F35C0B40009EC63 /* Metra (iOS).app */,
+				14F88B921F35C0B40009EC63 /* Metra.app */,
 				14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */,
 				14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */,
 			);
@@ -444,12 +449,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				147BC7021F36F887001F5FAB /* PBXTargetDependency */,
 				14D410391F37BC2E008FC59A /* PBXTargetDependency */,
+				140947A01F65D05000516BE3 /* PBXTargetDependency */,
 			);
 			name = "Metra (iOS)";
 			productName = Metra;
-			productReference = 14F88B921F35C0B40009EC63 /* Metra (iOS).app */;
+			productReference = 14F88B921F35C0B40009EC63 /* Metra.app */;
 			productType = "com.apple.product-type.application";
 		};
 		14F88BAA1F35C0C20009EC63 /* MetraScreenshots */ = {
@@ -529,8 +534,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 147BC6E41F36F7D5001F5FAB /* Products */;
-					ProjectRef = 147BC6E31F36F7D5001F5FAB /* CSV.xcodeproj */;
+					ProductGroup = 140947861F65D03D00516BE3 /* Products */;
+					ProjectRef = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
 				},
 				{
 					ProductGroup = 14D4102B1F37BC22008FC59A /* Products */;
@@ -547,53 +552,53 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		147BC6EE1F36F7D5001F5FAB /* CSV.framework */ = {
+		140947901F65D03D00516BE3 /* CSV.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CSV.framework;
-			remoteRef = 147BC6ED1F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 1409478F1F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6F01F36F7D5001F5FAB /* CSV.framework */ = {
+		140947921F65D03D00516BE3 /* CSV.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CSV.framework;
-			remoteRef = 147BC6EF1F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 140947911F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6F21F36F7D5001F5FAB /* CSV.framework */ = {
+		140947941F65D03D00516BE3 /* CSV.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CSV.framework;
-			remoteRef = 147BC6F11F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 140947931F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6F41F36F7D5001F5FAB /* CSV.framework */ = {
+		140947961F65D03D00516BE3 /* CSV.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CSV.framework;
-			remoteRef = 147BC6F31F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 140947951F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6F61F36F7D5001F5FAB /* CSVTests-macOS.xctest */ = {
+		140947981F65D03D00516BE3 /* CSVTests-macOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "CSVTests-macOS.xctest";
-			remoteRef = 147BC6F51F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 140947971F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6F81F36F7D5001F5FAB /* CSVTests-iOS.xctest */ = {
+		1409479A1F65D03D00516BE3 /* CSVTests-iOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "CSVTests-iOS.xctest";
-			remoteRef = 147BC6F71F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 140947991F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		147BC6FA1F36F7D5001F5FAB /* CSVTests-tvOS.xctest */ = {
+		1409479C1F65D03D00516BE3 /* CSVTests-tvOS.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "CSVTests-tvOS.xctest";
-			remoteRef = 147BC6F91F36F7D5001F5FAB /* PBXContainerItemProxy */;
+			remoteRef = 1409479B1F65D03D00516BE3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		14D410351F37BC22008FC59A /* TransitKit.framework */ = {
@@ -622,6 +627,7 @@
 				14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */,
 				149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */,
 				1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
+				140947A31F65D06D00516BE3 /* fabric.apikey in Resources */,
 				1497785F1F367BC0001B6A2D /* agency.txt in Resources */,
 				1497786E1F367BC0001B6A2D /* routes.txt in Resources */,
 			);
@@ -697,7 +703,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 80c3b2d37f1bca4e182e7fbf7976e6f069340b4d d0bc3219cfdb92e9f323b3c5f0de3ef22835401f8cda5fc54391593a8c285431";
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -757,10 +763,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		147BC7021F36F887001F5FAB /* PBXTargetDependency */ = {
+		140947A01F65D05000516BE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CSV-iOS";
-			targetProxy = 147BC7011F36F887001F5FAB /* PBXContainerItemProxy */;
+			targetProxy = 1409479F1F65D05000516BE3 /* PBXContainerItemProxy */;
 		};
 		14D410391F37BC2E008FC59A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

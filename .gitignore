@@ -66,3 +66,6 @@ Metra/Preview.html
 Metra/screenshots
 Metra/metadata
 Metra/test_output
+
+Metra/fabric.apikey
+Metra/fabric.buildsecret

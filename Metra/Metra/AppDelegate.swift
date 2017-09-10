@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Fabric
 import Crashlytics
 
 @UIApplicationMain
@@ -18,7 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        Fabric.with([Crashlytics.self])
+        guard let url = Bundle.main.url(forResource: "fabric.apikey", withExtension: nil),
+            let key = try? String(contentsOf: url) else {
+                fatalError()
+        }
+        Crashlytics.start(withAPIKey: key.replacingOccurrences(of: "\n", with: ""))
+
         System.shared.start()
 
         let metraColor = UIColor(red: 11.0/255.0, green: 86.0/255.0, blue: 162.0/255.0, alpha: 1.0)
