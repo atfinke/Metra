@@ -68,6 +68,11 @@ class AlertsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+            navigationItem.largeTitleDisplayMode = .always
+        }
+
         reloadBarButtonItem = navigationItem.rightBarButtonItem
 
         tableView.estimatedRowHeight = 70
