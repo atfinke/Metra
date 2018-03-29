@@ -26,9 +26,25 @@ class AlertTableViewCell: UITableViewCell {
 
         addSubview(titleLabel)
 
+        let leftMarginConstraint = NSLayoutConstraint(item: titleLabel,
+                                                      attribute: .left,
+                                                      relatedBy: .equal,
+                                                      toItem: self,
+                                                      attribute: .leftMargin,
+                                                      multiplier: 1.0,
+                                                      constant: 0.0)
+
+        let rightMarginConstraint = NSLayoutConstraint(item: titleLabel,
+                                                       attribute: .right,
+                                                       relatedBy: .equal,
+                                                       toItem: self,
+                                                       attribute: .rightMargin,
+                                                       multiplier: 1.0,
+                                                       constant: 0.0)
+
         let constraints = [
-            titleLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 12),
-            titleLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -12),
+            leftMarginConstraint,
+            rightMarginConstraint,
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ]
