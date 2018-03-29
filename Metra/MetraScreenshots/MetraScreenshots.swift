@@ -27,9 +27,9 @@ class MetraScreenshots: XCTestCase {
     func testScreenshot() {
         let tabBarsQuery = app.tabBars
         if UI_USER_INTERFACE_IDIOM() == .pad {
-            XCUIDevice.shared().orientation = .landscapeLeft
+            XCUIDevice.shared.orientation = .landscapeLeft
         } else {
-            XCUIDevice.shared().orientation = .portrait
+            XCUIDevice.shared.orientation = .portrait
         }
         sleep(5)
         tabBarsQuery.buttons["Alerts"].tap()
