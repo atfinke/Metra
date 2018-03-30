@@ -2,7 +2,13 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "Metra-1-a.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "Metra 18-34-34-41.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

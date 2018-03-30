@@ -26,7 +26,6 @@
 		1497781F1F3678F0001B6A2D /* EntitySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497781E1F3678F0001B6A2D /* EntitySelector.swift */; };
 		149778211F3678F8001B6A2D /* OccupancyStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778201F3678F8001B6A2D /* OccupancyStatus.swift */; };
 		149778251F36790F001B6A2D /* ScheduleRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778241F36790F001B6A2D /* ScheduleRelationship.swift */; };
-		14F88BED1F35C1410009EC63 /* TransitKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F88BEB1F35C1410009EC63 /* TransitKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,7 +49,6 @@
 		149778201F3678F8001B6A2D /* OccupancyStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OccupancyStatus.swift; sourceTree = "<group>"; };
 		149778241F36790F001B6A2D /* ScheduleRelationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleRelationship.swift; sourceTree = "<group>"; };
 		14F88BE81F35C1410009EC63 /* TransitKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F88BEB1F35C1410009EC63 /* TransitKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitKit.h; sourceTree = "<group>"; };
 		14F88BEC1F35C1410009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 		14F88BEA1F35C1410009EC63 /* TransitKit */ = {
 			isa = PBXGroup;
 			children = (
-				14F88BEB1F35C1410009EC63 /* TransitKit.h */,
 				149778261F367A06001B6A2D /* Realtime GTFS */,
 				14F88BEC1F35C1410009EC63 /* Info.plist */,
 			);
@@ -156,7 +153,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14F88BED1F35C1410009EC63 /* TransitKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +191,7 @@
 					14F88BE71F35C1410009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -425,7 +421,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
@@ -449,7 +446,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;

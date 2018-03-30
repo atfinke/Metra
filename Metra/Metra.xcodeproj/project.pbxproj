@@ -7,143 +7,182 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1409479D1F65D05000516BE3 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140947921F65D03D00516BE3 /* CSV.framework */; };
-		1409479E1F65D05000516BE3 /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 140947921F65D03D00516BE3 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		140947A31F65D06D00516BE3 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 140947A11F65D06D00516BE3 /* fabric.apikey */; };
+		142943F2206DADF400678B28 /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142943E7206DADF400678B28 /* AlertTableViewCell.swift */; };
+		142943F3206DADF400678B28 /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142943E8206DADF400678B28 /* AlertTableViewController.swift */; };
+		142943F4206DADF400678B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142943E9206DADF400678B28 /* AppDelegate.swift */; };
+		142943F5206DADF400678B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142943EA206DADF400678B28 /* Assets.xcassets */; };
+		142943F6206DADF400678B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142943EB206DADF400678B28 /* LaunchScreen.storyboard */; };
+		142943F7206DADF400678B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142943ED206DADF400678B28 /* Main.storyboard */; };
+		14294402206DADFA00678B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142943FC206DADFA00678B28 /* AppDelegate.swift */; };
+		14294403206DADFA00678B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142943FD206DADFA00678B28 /* Assets.xcassets */; };
+		14294407206DADFA00678B28 /* Main-TV.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14294401206DADFA00678B28 /* Main-TV.storyboard */; };
+		14294425206DAE0100678B28 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440A206DAE0100678B28 /* FilterTableViewController.swift */; };
+		14294426206DAE0100678B28 /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440A206DAE0100678B28 /* FilterTableViewController.swift */; };
+		14294427206DAE0100678B28 /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440B206DAE0100678B28 /* MapFilter.swift */; };
+		14294428206DAE0100678B28 /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440B206DAE0100678B28 /* MapFilter.swift */; };
+		14294429206DAE0100678B28 /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440D206DAE0100678B28 /* MapViewController+Filter.swift */; };
+		1429442A206DAE0100678B28 /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440D206DAE0100678B28 /* MapViewController+Filter.swift */; };
+		1429442B206DAE0100678B28 /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440E206DAE0100678B28 /* MapViewController+MapView.swift */; };
+		1429442C206DAE0100678B28 /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440E206DAE0100678B28 /* MapViewController+MapView.swift */; };
+		1429442D206DAE0100678B28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440F206DAE0100678B28 /* MapViewController.swift */; };
+		1429442E206DAE0100678B28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1429440F206DAE0100678B28 /* MapViewController.swift */; };
+		1429442F206DAE0100678B28 /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294410206DAE0100678B28 /* VehiclePinView.swift */; };
+		14294430206DAE0100678B28 /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294410206DAE0100678B28 /* VehiclePinView.swift */; };
+		14294431206DAE0100678B28 /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294411206DAE0100678B28 /* VehiclePositionAnnotation.swift */; };
+		14294432206DAE0100678B28 /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294411206DAE0100678B28 /* VehiclePositionAnnotation.swift */; };
+		14294433206DAE0100678B28 /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294413206DAE0100678B28 /* MetraDownloadTask.swift */; };
+		14294434206DAE0100678B28 /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294413206DAE0100678B28 /* MetraDownloadTask.swift */; };
+		14294435206DAE0100678B28 /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294414206DAE0100678B28 /* MetraExtensions.swift */; };
+		14294436206DAE0100678B28 /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294414206DAE0100678B28 /* MetraExtensions.swift */; };
+		14294437206DAE0100678B28 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294415206DAE0100678B28 /* Route.swift */; };
+		14294438206DAE0100678B28 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294415206DAE0100678B28 /* Route.swift */; };
+		14294439206DAE0100678B28 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294416206DAE0100678B28 /* Shape.swift */; };
+		1429443A206DAE0100678B28 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294416206DAE0100678B28 /* Shape.swift */; };
+		1429443B206DAE0100678B28 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294417206DAE0100678B28 /* System.swift */; };
+		1429443C206DAE0100678B28 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14294417206DAE0100678B28 /* System.swift */; };
+		1429443D206DAE0100678B28 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441A206DAE0100678B28 /* agency.txt */; };
+		1429443E206DAE0100678B28 /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441A206DAE0100678B28 /* agency.txt */; };
+		1429443F206DAE0100678B28 /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441B206DAE0100678B28 /* calendar.txt */; };
+		14294440206DAE0100678B28 /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441B206DAE0100678B28 /* calendar.txt */; };
+		14294441206DAE0100678B28 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441C206DAE0100678B28 /* calendar_dates.txt */; };
+		14294442206DAE0100678B28 /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441C206DAE0100678B28 /* calendar_dates.txt */; };
+		14294443206DAE0100678B28 /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441D206DAE0100678B28 /* fare_attributes.txt */; };
+		14294444206DAE0100678B28 /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441D206DAE0100678B28 /* fare_attributes.txt */; };
+		14294445206DAE0100678B28 /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441E206DAE0100678B28 /* fare_rules.txt */; };
+		14294446206DAE0100678B28 /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441E206DAE0100678B28 /* fare_rules.txt */; };
+		14294447206DAE0100678B28 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441F206DAE0100678B28 /* routes.txt */; };
+		14294448206DAE0100678B28 /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1429441F206DAE0100678B28 /* routes.txt */; };
+		14294449206DAE0100678B28 /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294420206DAE0100678B28 /* shapes.txt */; };
+		1429444A206DAE0100678B28 /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294420206DAE0100678B28 /* shapes.txt */; };
+		1429444B206DAE0100678B28 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294421206DAE0100678B28 /* stop_times.txt */; };
+		1429444C206DAE0100678B28 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294421206DAE0100678B28 /* stop_times.txt */; };
+		1429444D206DAE0100678B28 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294422206DAE0100678B28 /* stops.txt */; };
+		1429444E206DAE0100678B28 /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294422206DAE0100678B28 /* stops.txt */; };
+		1429444F206DAE0100678B28 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294423206DAE0100678B28 /* trips.txt */; };
+		14294450206DAE0100678B28 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14294423206DAE0100678B28 /* trips.txt */; };
+		14294451206DAE0100678B28 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14294424206DAE0100678B28 /* SharedAssets.xcassets */; };
+		14294452206DAE0100678B28 /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14294424206DAE0100678B28 /* SharedAssets.xcassets */; };
+		14294475206DAE1900678B28 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 14294472206DAE1900678B28 /* fabric.apikey */; };
+		14294476206DAE1900678B28 /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 14294472206DAE1900678B28 /* fabric.apikey */; };
+		1434951C206DB0FF000488F8 /* TransitKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14294458206DAE0C00678B28 /* TransitKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14349522206DB107000488F8 /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14294468206DAE1100678B28 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14349533206DB2A9000488F8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14349531206DB2A9000488F8 /* Crashlytics.framework */; };
+		14349534206DB2A9000488F8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14349532206DB2A9000488F8 /* Fabric.framework */; };
+		1434953E206DB751000488F8 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1434953C206DB750000488F8 /* Crashlytics.framework */; };
+		1434953F206DB751000488F8 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1434953D206DB751000488F8 /* Fabric.framework */; };
+		14349544206DB890000488F8 /* CSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14294466206DAE1100678B28 /* CSV.framework */; };
+		14349545206DB890000488F8 /* CSV.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14294466206DAE1100678B28 /* CSV.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14349549206DB894000488F8 /* TransitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14294458206DAE0C00678B28 /* TransitKit.framework */; };
+		1434954A206DB894000488F8 /* TransitKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14294458206DAE0C00678B28 /* TransitKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14550E751F37B62B00872B7B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14550E741F37B62B00872B7B /* SnapshotHelper.swift */; };
-		148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468E1F36E98B00AFF585 /* Fabric.framework */; };
-		148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1483468F1F36E98B00AFF585 /* Crashlytics.framework */; };
-		1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
-		1497782E1F367AFF001B6A2D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782B1F367AFF001B6A2D /* MapViewController.swift */; };
-		149778301F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
-		149778321F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */; };
-		149778341F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
-		149778361F367B14001B6A2D /* MapViewController+MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778331F367B14001B6A2D /* MapViewController+MapView.swift */; };
-		149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
-		1497783A1F367B31001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
-		1497783C1F367B36001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
-		1497783E1F367B3A001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
-		149778401F367B3F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
-		149778421F367B47001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
-		149778491F367B4F001B6A2D /* FilterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778371F367B2B001B6A2D /* FilterTableViewController.swift */; };
-		1497784A1F367B4F001B6A2D /* MapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778391F367B31001B6A2D /* MapFilter.swift */; };
-		1497784B1F367B4F001B6A2D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783B1F367B36001B6A2D /* Route.swift */; };
-		1497784C1F367B4F001B6A2D /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783D1F367B3A001B6A2D /* Shape.swift */; };
-		1497784D1F367B4F001B6A2D /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497783F1F367B3F001B6A2D /* System.swift */; };
-		1497784E1F367B4F001B6A2D /* MetraDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778411F367B47001B6A2D /* MetraDownloadTask.swift */; };
-		1497785F1F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
-		149778611F367BC0001B6A2D /* agency.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778551F367BC0001B6A2D /* agency.txt */; };
-		149778621F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
-		149778641F367BC0001B6A2D /* calendar.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778561F367BC0001B6A2D /* calendar.txt */; };
-		149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
-		149778671F367BC0001B6A2D /* calendar_dates.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778571F367BC0001B6A2D /* calendar_dates.txt */; };
-		149778681F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
-		1497786A1F367BC0001B6A2D /* fare_attributes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778581F367BC0001B6A2D /* fare_attributes.txt */; };
-		1497786B1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
-		1497786D1F367BC0001B6A2D /* fare_rules.txt in Resources */ = {isa = PBXBuildFile; fileRef = 149778591F367BC0001B6A2D /* fare_rules.txt */; };
-		1497786E1F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
-		149778701F367BC0001B6A2D /* routes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785A1F367BC0001B6A2D /* routes.txt */; };
-		149778711F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
-		149778731F367BC0001B6A2D /* shapes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785B1F367BC0001B6A2D /* shapes.txt */; };
-		149778741F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
-		149778761F367BC0001B6A2D /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785C1F367BC0001B6A2D /* stop_times.txt */; };
-		149778771F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
-		149778791F367BC0001B6A2D /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785D1F367BC0001B6A2D /* stops.txt */; };
-		1497787A1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
-		1497787C1F367BC0001B6A2D /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1497785E1F367BC0001B6A2D /* trips.txt */; };
-		1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
-		149778801F367BD9001B6A2D /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */; };
-		149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
-		149778841F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */; };
-		149778891F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
-		1497788B1F367D4E001B6A2D /* MetraExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778881F367D4E001B6A2D /* MetraExtensions.swift */; };
-		1497788D1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
-		1497788F1F367DB3001B6A2D /* VehiclePinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1497788C1F367DB3001B6A2D /* VehiclePinView.swift */; };
-		149778911F367EC4001B6A2D /* AlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778901F367EC4001B6A2D /* AlertTableViewCell.swift */; };
-		149778931F367ECA001B6A2D /* AlertTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149778921F367ECA001B6A2D /* AlertTableViewController.swift */; };
-		14D410361F37BC2E008FC59A /* TransitKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D410351F37BC22008FC59A /* TransitKit.framework */; };
-		14D410371F37BC2E008FC59A /* TransitKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14D410351F37BC22008FC59A /* TransitKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		14F88B961F35C0B40009EC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88B951F35C0B40009EC63 /* AppDelegate.swift */; };
-		14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B991F35C0B40009EC63 /* Main.storyboard */; };
-		14F88B9D1F35C0B50009EC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B9C1F35C0B50009EC63 /* Assets.xcassets */; };
-		14F88BA01F35C0B50009EC63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */; };
 		14F88BAE1F35C0C20009EC63 /* MetraScreenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BAD1F35C0C20009EC63 /* MetraScreenshots.swift */; };
-		14F88BD21F35C1110009EC63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BD11F35C1110009EC63 /* AppDelegate.swift */; };
-		14F88BD41F35C1110009EC63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F88BD31F35C1110009EC63 /* ViewController.swift */; };
-		14F88BD71F35C1110009EC63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F88BD51F35C1110009EC63 /* Main.storyboard */; };
-		14F88BD91F35C1120009EC63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F88BD81F35C1120009EC63 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1409478F1F65D03D00516BE3 /* PBXContainerItemProxy */ = {
+		140AFBCF206DB03800A381B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8CC61D0BCA2A0057A1C1;
-			remoteInfo = "CSV-macOS";
+			containerPortal = 14294453206DAE0C00678B28 /* TransitKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F88BE71F35C1410009EC63;
+			remoteInfo = TransitKit;
 		};
-		140947911F65D03D00516BE3 /* PBXContainerItemProxy */ = {
+		140AFBD1206DB03B00A381B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8C811D0BC7BB0057A1C1;
-			remoteInfo = "CSV-iOS";
-		};
-		140947931F65D03D00516BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8CE81D0BCD0B0057A1C1;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7E8CE71D0BCD0B0057A1C1;
 			remoteInfo = "CSV-tvOS";
 		};
-		140947951F65D03D00516BE3 /* PBXContainerItemProxy */ = {
+		14294457206DAE0C00678B28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8CB51D0BC98B0057A1C1;
-			remoteInfo = "CSV-watchOS";
-		};
-		140947971F65D03D00516BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8CCF1D0BCA2A0057A1C1;
-			remoteInfo = "CSVTests-macOS";
-		};
-		140947991F65D03D00516BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8C8B1D0BC7BB0057A1C1;
-			remoteInfo = "CSVTests-iOS";
-		};
-		1409479B1F65D03D00516BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0E7E8CF11D0BCD0B0057A1C1;
-			remoteInfo = "CSVTests-tvOS";
-		};
-		1409479F1F65D05000516BE3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E7E8C801D0BC7BB0057A1C1;
-			remoteInfo = "CSV-iOS";
-		};
-		14D410341F37BC22008FC59A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+			containerPortal = 14294453206DAE0C00678B28 /* TransitKit.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 14F88BE81F35C1410009EC63;
 			remoteInfo = TransitKit;
 		};
-		14D410381F37BC2E008FC59A /* PBXContainerItemProxy */ = {
+		14294463206DAE1100678B28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CC61D0BCA2A0057A1C1;
+			remoteInfo = "CSV-macOS";
+		};
+		14294465206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8C811D0BC7BB0057A1C1;
+			remoteInfo = "CSV-iOS";
+		};
+		14294467206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CE81D0BCD0B0057A1C1;
+			remoteInfo = "CSV-tvOS";
+		};
+		14294469206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CB51D0BC98B0057A1C1;
+			remoteInfo = "CSV-watchOS";
+		};
+		1429446B206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CCF1D0BCA2A0057A1C1;
+			remoteInfo = "CSVTests-macOS";
+		};
+		1429446D206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8C8B1D0BC7BB0057A1C1;
+			remoteInfo = "CSVTests-iOS";
+		};
+		1429446F206DAE1100678B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0E7E8CF11D0BCD0B0057A1C1;
+			remoteInfo = "CSVTests-tvOS";
+		};
+		14349540206DB886000488F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7E8C801D0BC7BB0057A1C1;
+			remoteInfo = "CSV-iOS";
+		};
+		14349542206DB889000488F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294453206DAE0C00678B28 /* TransitKit.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 14F88BE71F35C1410009EC63;
 			remoteInfo = TransitKit;
+		};
+		14349546206DB890000488F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E7E8C801D0BC7BB0057A1C1;
+			remoteInfo = "CSV-iOS";
+		};
+		1434954B206DB894000488F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14294453206DAE0C00678B28 /* TransitKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F88BE71F35C1410009EC63;
+			remoteInfo = TransitKit;
+		};
+		147DD640206DAD20008A88D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F88B8A1F35C0B40009EC63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14F88BCE1F35C1110009EC63;
+			remoteInfo = "Metra (tvOS)";
 		};
 		14F88BB01F35C0C20009EC63 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -155,14 +194,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		147BC6FE1F36F866001F5FAB /* Embed Frameworks */ = {
+		14349548206DB890000488F8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				14D410371F37BC2E008FC59A /* TransitKit.framework in Embed Frameworks */,
-				1409479E1F65D05000516BE3 /* CSV.framework in Embed Frameworks */,
+				14349545206DB890000488F8 /* CSV.framework in Embed Frameworks */,
+				1434954A206DB894000488F8 /* TransitKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +212,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				14349522206DB107000488F8 /* CSV.framework in Embed Frameworks */,
+				1434951C206DB0FF000488F8 /* TransitKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,57 +221,58 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		140947851F65D03D00516BE3 /* CSV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSV.xcodeproj; path = ../../External/CSV/CSV.xcodeproj; sourceTree = "<group>"; };
-		140947A11F65D06D00516BE3 /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = SOURCE_ROOT; };
-		140947A21F65D06D00516BE3 /* fabric.buildsecret */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = SOURCE_ROOT; };
+		142943E7206DADF400678B28 /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
+		142943E8206DADF400678B28 /* AlertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
+		142943E9206DADF400678B28 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		142943EA206DADF400678B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		142943EC206DADF400678B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		142943EE206DADF400678B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		142943F1206DADF400678B28 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142943FC206DADFA00678B28 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		142943FD206DADFA00678B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14294400206DADFA00678B28 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14294401206DADFA00678B28 /* Main-TV.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-TV.storyboard"; sourceTree = "<group>"; };
+		1429440A206DAE0100678B28 /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
+		1429440B206DAE0100678B28 /* MapFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFilter.swift; sourceTree = "<group>"; };
+		1429440D206DAE0100678B28 /* MapViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+Filter.swift"; sourceTree = "<group>"; };
+		1429440E206DAE0100678B28 /* MapViewController+MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapView.swift"; sourceTree = "<group>"; };
+		1429440F206DAE0100678B28 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		14294410206DAE0100678B28 /* VehiclePinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePinView.swift; sourceTree = "<group>"; };
+		14294411206DAE0100678B28 /* VehiclePositionAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePositionAnnotation.swift; sourceTree = "<group>"; };
+		14294413206DAE0100678B28 /* MetraDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraDownloadTask.swift; sourceTree = "<group>"; };
+		14294414206DAE0100678B28 /* MetraExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraExtensions.swift; sourceTree = "<group>"; };
+		14294415206DAE0100678B28 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		14294416206DAE0100678B28 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		14294417206DAE0100678B28 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		1429441A206DAE0100678B28 /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
+		1429441B206DAE0100678B28 /* calendar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.txt; sourceTree = "<group>"; };
+		1429441C206DAE0100678B28 /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
+		1429441D206DAE0100678B28 /* fare_attributes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_attributes.txt; sourceTree = "<group>"; };
+		1429441E206DAE0100678B28 /* fare_rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_rules.txt; sourceTree = "<group>"; };
+		1429441F206DAE0100678B28 /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
+		14294420206DAE0100678B28 /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
+		14294421206DAE0100678B28 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
+		14294422206DAE0100678B28 /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
+		14294423206DAE0100678B28 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
+		14294424206DAE0100678B28 /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
+		14294453206DAE0C00678B28 /* TransitKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TransitKit.xcodeproj; path = ../../../TransitKit/TransitKit.xcodeproj; sourceTree = "<group>"; };
+		14294459206DAE1100678B28 /* CSV.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CSV.xcodeproj; path = ../../../External/CSV/CSV.xcodeproj; sourceTree = "<group>"; };
+		14294471206DAE1800678B28 /* fabric.buildsecret */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = SOURCE_ROOT; };
+		14294472206DAE1900678B28 /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = SOURCE_ROOT; };
+		14349531206DB2A9000488F8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		14349532206DB2A9000488F8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1434953C206DB750000488F8 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		1434953D206DB751000488F8 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		14550E741F37B62B00872B7B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		1483468E1F36E98B00AFF585 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
-		1483468F1F36E98B00AFF585 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
-		1497782B1F367AFF001B6A2D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+Filter.swift"; sourceTree = "<group>"; };
-		149778331F367B14001B6A2D /* MapViewController+MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapViewController+MapView.swift"; sourceTree = "<group>"; };
-		149778371F367B2B001B6A2D /* FilterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewController.swift; sourceTree = "<group>"; };
-		149778391F367B31001B6A2D /* MapFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapFilter.swift; sourceTree = "<group>"; };
-		1497783B1F367B36001B6A2D /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		1497783D1F367B3A001B6A2D /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		1497783F1F367B3F001B6A2D /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
-		149778411F367B47001B6A2D /* MetraDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraDownloadTask.swift; sourceTree = "<group>"; };
-		149778551F367BC0001B6A2D /* agency.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agency.txt; sourceTree = "<group>"; };
-		149778561F367BC0001B6A2D /* calendar.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar.txt; sourceTree = "<group>"; };
-		149778571F367BC0001B6A2D /* calendar_dates.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = calendar_dates.txt; sourceTree = "<group>"; };
-		149778581F367BC0001B6A2D /* fare_attributes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_attributes.txt; sourceTree = "<group>"; };
-		149778591F367BC0001B6A2D /* fare_rules.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fare_rules.txt; sourceTree = "<group>"; };
-		1497785A1F367BC0001B6A2D /* routes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = routes.txt; sourceTree = "<group>"; };
-		1497785B1F367BC0001B6A2D /* shapes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shapes.txt; sourceTree = "<group>"; };
-		1497785C1F367BC0001B6A2D /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stop_times.txt; sourceTree = "<group>"; };
-		1497785D1F367BC0001B6A2D /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
-		1497785E1F367BC0001B6A2D /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
-		1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
-		149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePositionAnnotation.swift; sourceTree = "<group>"; };
 		149778861F367CD8001B6A2D /* CSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSV.framework; path = "../3rd Party/CSV/build/Debug-iphoneos/CSV.framework"; sourceTree = "<group>"; };
-		149778881F367D4E001B6A2D /* MetraExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetraExtensions.swift; sourceTree = "<group>"; };
-		1497788C1F367DB3001B6A2D /* VehiclePinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VehiclePinView.swift; sourceTree = "<group>"; };
-		149778901F367EC4001B6A2D /* AlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewCell.swift; sourceTree = "<group>"; };
-		149778921F367ECA001B6A2D /* AlertTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTableViewController.swift; sourceTree = "<group>"; };
 		14D410161F37BAC9008FC59A /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = SOURCE_ROOT; };
 		14D410171F37BAC9008FC59A /* Snapfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Snapfile; sourceTree = SOURCE_ROOT; };
-		14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TransitKit.xcodeproj; path = ../../TransitKit/TransitKit.xcodeproj; sourceTree = "<group>"; };
 		14D4103C1F37C498008FC59A /* Deliverfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Deliverfile; sourceTree = SOURCE_ROOT; };
 		14F88B921F35C0B40009EC63 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F88B951F35C0B40009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14F88B9A1F35C0B40009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14F88B9C1F35C0B50009EC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14F88B9F1F35C0B50009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		14F88BA11F35C0B50009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetraScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F88BAD1F35C0C20009EC63 /* MetraScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetraScreenshots.swift; sourceTree = "<group>"; };
 		14F88BAF1F35C0C20009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metra (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F88BD11F35C1110009EC63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		14F88BD31F35C1110009EC63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14F88BD61F35C1110009EC63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14F88BD81F35C1120009EC63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		14F88BDA1F35C1120009EC63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F88BCF1F35C1110009EC63 /* Metra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,10 +280,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14D410361F37BC2E008FC59A /* TransitKit.framework in Frameworks */,
-				1409479D1F65D05000516BE3 /* CSV.framework in Frameworks */,
-				148346911F36E98B00AFF585 /* Crashlytics.framework in Frameworks */,
-				148346901F36E98B00AFF585 /* Fabric.framework in Frameworks */,
+				14349544206DB890000488F8 /* CSV.framework in Frameworks */,
+				14349549206DB894000488F8 /* TransitKit.framework in Frameworks */,
+				1434953E206DB751000488F8 /* Crashlytics.framework in Frameworks */,
+				1434953F206DB751000488F8 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,99 +298,137 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14349533206DB2A9000488F8 /* Crashlytics.framework in Frameworks */,
+				14349534206DB2A9000488F8 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		140947861F65D03D00516BE3 /* Products */ = {
+		142943E6206DADF400678B28 /* Metra (iOS) */ = {
 			isa = PBXGroup;
 			children = (
-				140947901F65D03D00516BE3 /* CSV.framework */,
-				140947921F65D03D00516BE3 /* CSV.framework */,
-				140947941F65D03D00516BE3 /* CSV.framework */,
-				140947961F65D03D00516BE3 /* CSV.framework */,
-				140947981F65D03D00516BE3 /* CSVTests-macOS.xctest */,
-				1409479A1F65D03D00516BE3 /* CSVTests-iOS.xctest */,
-				1409479C1F65D03D00516BE3 /* CSVTests-tvOS.xctest */,
+				142943E7206DADF400678B28 /* AlertTableViewCell.swift */,
+				142943E8206DADF400678B28 /* AlertTableViewController.swift */,
+				142943E9206DADF400678B28 /* AppDelegate.swift */,
+				142943EA206DADF400678B28 /* Assets.xcassets */,
+				142943EB206DADF400678B28 /* LaunchScreen.storyboard */,
+				142943ED206DADF400678B28 /* Main.storyboard */,
+				142943F1206DADF400678B28 /* Info.plist */,
+				1434953C206DB750000488F8 /* Crashlytics.framework */,
+				1434953D206DB751000488F8 /* Fabric.framework */,
+			);
+			path = "Metra (iOS)";
+			sourceTree = "<group>";
+		};
+		142943FB206DADFA00678B28 /* Metra (tvOS) */ = {
+			isa = PBXGroup;
+			children = (
+				142943FC206DADFA00678B28 /* AppDelegate.swift */,
+				142943FD206DADFA00678B28 /* Assets.xcassets */,
+				14294400206DADFA00678B28 /* Info.plist */,
+				14294401206DADFA00678B28 /* Main-TV.storyboard */,
+				14349531206DB2A9000488F8 /* Crashlytics.framework */,
+				14349532206DB2A9000488F8 /* Fabric.framework */,
+			);
+			path = "Metra (tvOS)";
+			sourceTree = "<group>";
+		};
+		14294408206DAE0100678B28 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				14294409206DAE0100678B28 /* Filtering */,
+				1429440C206DAE0100678B28 /* Map View */,
+				14294412206DAE0100678B28 /* Model */,
+				14294418206DAE0100678B28 /* Resources */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		14294409206DAE0100678B28 /* Filtering */ = {
+			isa = PBXGroup;
+			children = (
+				1429440A206DAE0100678B28 /* FilterTableViewController.swift */,
+				1429440B206DAE0100678B28 /* MapFilter.swift */,
+			);
+			path = Filtering;
+			sourceTree = "<group>";
+		};
+		1429440C206DAE0100678B28 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				1429440D206DAE0100678B28 /* MapViewController+Filter.swift */,
+				1429440E206DAE0100678B28 /* MapViewController+MapView.swift */,
+				1429440F206DAE0100678B28 /* MapViewController.swift */,
+				14294410206DAE0100678B28 /* VehiclePinView.swift */,
+				14294411206DAE0100678B28 /* VehiclePositionAnnotation.swift */,
+			);
+			path = "Map View";
+			sourceTree = "<group>";
+		};
+		14294412206DAE0100678B28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14294413206DAE0100678B28 /* MetraDownloadTask.swift */,
+				14294414206DAE0100678B28 /* MetraExtensions.swift */,
+				14294415206DAE0100678B28 /* Route.swift */,
+				14294416206DAE0100678B28 /* Shape.swift */,
+				14294417206DAE0100678B28 /* System.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14294418206DAE0100678B28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14294472206DAE1900678B28 /* fabric.apikey */,
+				14294471206DAE1800678B28 /* fabric.buildsecret */,
+				14294459206DAE1100678B28 /* CSV.xcodeproj */,
+				14294453206DAE0C00678B28 /* TransitKit.xcodeproj */,
+				14294419206DAE0100678B28 /* GTFS */,
+				14294424206DAE0100678B28 /* SharedAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		14294419206DAE0100678B28 /* GTFS */ = {
+			isa = PBXGroup;
+			children = (
+				1429441A206DAE0100678B28 /* agency.txt */,
+				1429441B206DAE0100678B28 /* calendar.txt */,
+				1429441C206DAE0100678B28 /* calendar_dates.txt */,
+				1429441D206DAE0100678B28 /* fare_attributes.txt */,
+				1429441E206DAE0100678B28 /* fare_rules.txt */,
+				1429441F206DAE0100678B28 /* routes.txt */,
+				14294420206DAE0100678B28 /* shapes.txt */,
+				14294421206DAE0100678B28 /* stop_times.txt */,
+				14294422206DAE0100678B28 /* stops.txt */,
+				14294423206DAE0100678B28 /* trips.txt */,
+			);
+			path = GTFS;
+			sourceTree = "<group>";
+		};
+		14294454206DAE0C00678B28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14294458206DAE0C00678B28 /* TransitKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1497784F1F367B5D001B6A2D /* Shared */ = {
+		1429445A206DAE1100678B28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				149778511F367B83001B6A2D /* Filtering */,
-				149778501F367B7A001B6A2D /* Map View */,
-				149778521F367B90001B6A2D /* Model */,
-				149778531F367BA6001B6A2D /* Resources */,
+				14294464206DAE1100678B28 /* CSV.framework */,
+				14294466206DAE1100678B28 /* CSV.framework */,
+				14294468206DAE1100678B28 /* CSV.framework */,
+				1429446A206DAE1100678B28 /* CSV.framework */,
+				1429446C206DAE1100678B28 /* CSVTests-macOS.xctest */,
+				1429446E206DAE1100678B28 /* CSVTests-iOS.xctest */,
+				14294470206DAE1100678B28 /* CSVTests-tvOS.xctest */,
 			);
-			name = Shared;
-			path = Metra;
-			sourceTree = "<group>";
-		};
-		149778501F367B7A001B6A2D /* Map View */ = {
-			isa = PBXGroup;
-			children = (
-				1497788C1F367DB3001B6A2D /* VehiclePinView.swift */,
-				149778811F367C7F001B6A2D /* VehiclePositionAnnotation.swift */,
-				1497782B1F367AFF001B6A2D /* MapViewController.swift */,
-				1497782F1F367B0D001B6A2D /* MapViewController+Filter.swift */,
-				149778331F367B14001B6A2D /* MapViewController+MapView.swift */,
-			);
-			name = "Map View";
-			sourceTree = "<group>";
-		};
-		149778511F367B83001B6A2D /* Filtering */ = {
-			isa = PBXGroup;
-			children = (
-				149778391F367B31001B6A2D /* MapFilter.swift */,
-				149778371F367B2B001B6A2D /* FilterTableViewController.swift */,
-			);
-			name = Filtering;
-			sourceTree = "<group>";
-		};
-		149778521F367B90001B6A2D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1497783B1F367B36001B6A2D /* Route.swift */,
-				1497783D1F367B3A001B6A2D /* Shape.swift */,
-				1497783F1F367B3F001B6A2D /* System.swift */,
-				149778881F367D4E001B6A2D /* MetraExtensions.swift */,
-				149778411F367B47001B6A2D /* MetraDownloadTask.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		149778531F367BA6001B6A2D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				140947A11F65D06D00516BE3 /* fabric.apikey */,
-				140947A21F65D06D00516BE3 /* fabric.buildsecret */,
-				140947851F65D03D00516BE3 /* CSV.xcodeproj */,
-				14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */,
-				1497787D1F367BD9001B6A2D /* SharedAssets.xcassets */,
-				149778541F367BC0001B6A2D /* GTFS */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		149778541F367BC0001B6A2D /* GTFS */ = {
-			isa = PBXGroup;
-			children = (
-				149778551F367BC0001B6A2D /* agency.txt */,
-				149778561F367BC0001B6A2D /* calendar.txt */,
-				149778571F367BC0001B6A2D /* calendar_dates.txt */,
-				149778581F367BC0001B6A2D /* fare_attributes.txt */,
-				149778591F367BC0001B6A2D /* fare_rules.txt */,
-				1497785A1F367BC0001B6A2D /* routes.txt */,
-				1497785B1F367BC0001B6A2D /* shapes.txt */,
-				1497785C1F367BC0001B6A2D /* stop_times.txt */,
-				1497785D1F367BC0001B6A2D /* stops.txt */,
-				1497785E1F367BC0001B6A2D /* trips.txt */,
-			);
-			path = GTFS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		149778851F367CD8001B6A2D /* Frameworks */ = {
@@ -359,20 +439,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		14D4102B1F37BC22008FC59A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				14D410351F37BC22008FC59A /* TransitKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		14F88B891F35C0B40009EC63 = {
 			isa = PBXGroup;
 			children = (
-				1497784F1F367B5D001B6A2D /* Shared */,
-				14F88B941F35C0B40009EC63 /* Metra (iOS) */,
-				14F88BD01F35C1110009EC63 /* Metra (tvOS) */,
+				14294408206DAE0100678B28 /* Shared */,
+				142943E6206DADF400678B28 /* Metra (iOS) */,
+				142943FB206DADFA00678B28 /* Metra (tvOS) */,
 				14F88BAC1F35C0C20009EC63 /* MetraScreenshots */,
 				14F88B931F35C0B40009EC63 /* Products */,
 				149778851F367CD8001B6A2D /* Frameworks */,
@@ -384,26 +456,9 @@
 			children = (
 				14F88B921F35C0B40009EC63 /* Metra.app */,
 				14F88BAB1F35C0C20009EC63 /* MetraScreenshots.xctest */,
-				14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */,
+				14F88BCF1F35C1110009EC63 /* Metra.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		14F88B941F35C0B40009EC63 /* Metra (iOS) */ = {
-			isa = PBXGroup;
-			children = (
-				14F88B951F35C0B40009EC63 /* AppDelegate.swift */,
-				149778901F367EC4001B6A2D /* AlertTableViewCell.swift */,
-				149778921F367ECA001B6A2D /* AlertTableViewController.swift */,
-				14F88B991F35C0B40009EC63 /* Main.storyboard */,
-				14F88B9C1F35C0B50009EC63 /* Assets.xcassets */,
-				14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */,
-				14F88BA11F35C0B50009EC63 /* Info.plist */,
-				1483468E1F36E98B00AFF585 /* Fabric.framework */,
-				1483468F1F36E98B00AFF585 /* Crashlytics.framework */,
-			);
-			name = "Metra (iOS)";
-			path = Metra;
 			sourceTree = "<group>";
 		};
 		14F88BAC1F35C0C20009EC63 /* MetraScreenshots */ = {
@@ -419,18 +474,6 @@
 			path = MetraScreenshots;
 			sourceTree = "<group>";
 		};
-		14F88BD01F35C1110009EC63 /* Metra (tvOS) */ = {
-			isa = PBXGroup;
-			children = (
-				14F88BD11F35C1110009EC63 /* AppDelegate.swift */,
-				14F88BD31F35C1110009EC63 /* ViewController.swift */,
-				14F88BD51F35C1110009EC63 /* Main.storyboard */,
-				14F88BD81F35C1120009EC63 /* Assets.xcassets */,
-				14F88BDA1F35C1120009EC63 /* Info.plist */,
-			);
-			path = "Metra (tvOS)";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,19 +481,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14F88BA41F35C0B50009EC63 /* Build configuration list for PBXNativeTarget "Metra (iOS)" */;
 			buildPhases = (
-				14550E6D1F37B5A500872B7B /* Build Number */,
 				14F88B8E1F35C0B40009EC63 /* Sources */,
 				14F88B8F1F35C0B40009EC63 /* Frameworks */,
 				14F88B901F35C0B40009EC63 /* Resources */,
-				147BC6FE1F36F866001F5FAB /* Embed Frameworks */,
 				1405C82A1F37E60D0066B232 /* Swiftlint */,
 				1483468D1F36E94700AFF585 /* Fabric */,
+				14349548206DB890000488F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				14D410391F37BC2E008FC59A /* PBXTargetDependency */,
-				140947A01F65D05000516BE3 /* PBXTargetDependency */,
+				14349543206DB889000488F8 /* PBXTargetDependency */,
+				14349541206DB886000488F8 /* PBXTargetDependency */,
+				14349547206DB890000488F8 /* PBXTargetDependency */,
+				1434954C206DB894000488F8 /* PBXTargetDependency */,
 			);
 			name = "Metra (iOS)";
 			productName = Metra;
@@ -469,6 +513,7 @@
 			);
 			dependencies = (
 				14F88BB11F35C0C20009EC63 /* PBXTargetDependency */,
+				147DD641206DAD20008A88D9 /* PBXTargetDependency */,
 			);
 			name = MetraScreenshots;
 			productName = MetraScreenshots;
@@ -483,14 +528,18 @@
 				14F88BCC1F35C1110009EC63 /* Frameworks */,
 				14F88BCD1F35C1110009EC63 /* Resources */,
 				1498884D1F36DA9D006EDFDD /* Embed Frameworks */,
+				14CF3057206D983000CDD530 /* Swiftlint */,
+				14CF3058206D983200CDD530 /* Fabric */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				140AFBD2206DB03B00A381B7 /* PBXTargetDependency */,
+				140AFBD0206DB03800A381B7 /* PBXTargetDependency */,
 			);
 			name = "Metra (tvOS)";
 			productName = "Metra (tvOS)";
-			productReference = 14F88BCF1F35C1110009EC63 /* Metra (tvOS).app */;
+			productReference = 14F88BCF1F35C1110009EC63 /* Metra.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -506,17 +555,20 @@
 					14F88B911F35C0B40009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					14F88BAA1F35C0C20009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 14F88B911F35C0B40009EC63;
 					};
 					14F88BCE1F35C1110009EC63 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 72S993BNAV;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -534,12 +586,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 140947861F65D03D00516BE3 /* Products */;
-					ProjectRef = 140947851F65D03D00516BE3 /* CSV.xcodeproj */;
+					ProductGroup = 1429445A206DAE1100678B28 /* Products */;
+					ProjectRef = 14294459206DAE1100678B28 /* CSV.xcodeproj */;
 				},
 				{
-					ProductGroup = 14D4102B1F37BC22008FC59A /* Products */;
-					ProjectRef = 14D4102A1F37BC22008FC59A /* TransitKit.xcodeproj */;
+					ProductGroup = 14294454206DAE0C00678B28 /* Products */;
+					ProjectRef = 14294453206DAE0C00678B28 /* TransitKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -552,60 +604,60 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		140947901F65D03D00516BE3 /* CSV.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CSV.framework;
-			remoteRef = 1409478F1F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		140947921F65D03D00516BE3 /* CSV.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CSV.framework;
-			remoteRef = 140947911F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		140947941F65D03D00516BE3 /* CSV.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CSV.framework;
-			remoteRef = 140947931F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		140947961F65D03D00516BE3 /* CSV.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CSV.framework;
-			remoteRef = 140947951F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		140947981F65D03D00516BE3 /* CSVTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CSVTests-macOS.xctest";
-			remoteRef = 140947971F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1409479A1F65D03D00516BE3 /* CSVTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CSVTests-iOS.xctest";
-			remoteRef = 140947991F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1409479C1F65D03D00516BE3 /* CSVTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CSVTests-tvOS.xctest";
-			remoteRef = 1409479B1F65D03D00516BE3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		14D410351F37BC22008FC59A /* TransitKit.framework */ = {
+		14294458206DAE0C00678B28 /* TransitKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = TransitKit.framework;
-			remoteRef = 14D410341F37BC22008FC59A /* PBXContainerItemProxy */;
+			remoteRef = 14294457206DAE0C00678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14294464206DAE1100678B28 /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 14294463206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14294466206DAE1100678B28 /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 14294465206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14294468206DAE1100678B28 /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 14294467206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1429446A206DAE1100678B28 /* CSV.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CSV.framework;
+			remoteRef = 14294469206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1429446C206DAE1100678B28 /* CSVTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-macOS.xctest";
+			remoteRef = 1429446B206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1429446E206DAE1100678B28 /* CSVTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-iOS.xctest";
+			remoteRef = 1429446D206DAE1100678B28 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		14294470206DAE1100678B28 /* CSVTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CSVTests-tvOS.xctest";
+			remoteRef = 1429446F206DAE1100678B28 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -615,21 +667,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149778711F367BC0001B6A2D /* shapes.txt in Resources */,
-				149778621F367BC0001B6A2D /* calendar.txt in Resources */,
-				149778681F367BC0001B6A2D /* fare_attributes.txt in Resources */,
-				14F88BA01F35C0B50009EC63 /* LaunchScreen.storyboard in Resources */,
-				149778771F367BC0001B6A2D /* stops.txt in Resources */,
-				149778741F367BC0001B6A2D /* stop_times.txt in Resources */,
-				14F88B9D1F35C0B50009EC63 /* Assets.xcassets in Resources */,
-				1497786B1F367BC0001B6A2D /* fare_rules.txt in Resources */,
-				1497787A1F367BC0001B6A2D /* trips.txt in Resources */,
-				14F88B9B1F35C0B40009EC63 /* Main.storyboard in Resources */,
-				149778651F367BC0001B6A2D /* calendar_dates.txt in Resources */,
-				1497787E1F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
-				140947A31F65D06D00516BE3 /* fabric.apikey in Resources */,
-				1497785F1F367BC0001B6A2D /* agency.txt in Resources */,
-				1497786E1F367BC0001B6A2D /* routes.txt in Resources */,
+				14294475206DAE1900678B28 /* fabric.apikey in Resources */,
+				14294451206DAE0100678B28 /* SharedAssets.xcassets in Resources */,
+				14294447206DAE0100678B28 /* routes.txt in Resources */,
+				1429443F206DAE0100678B28 /* calendar.txt in Resources */,
+				1429443D206DAE0100678B28 /* agency.txt in Resources */,
+				142943F7206DADF400678B28 /* Main.storyboard in Resources */,
+				1429444F206DAE0100678B28 /* trips.txt in Resources */,
+				142943F5206DADF400678B28 /* Assets.xcassets in Resources */,
+				14294443206DAE0100678B28 /* fare_attributes.txt in Resources */,
+				14294445206DAE0100678B28 /* fare_rules.txt in Resources */,
+				14294449206DAE0100678B28 /* shapes.txt in Resources */,
+				142943F6206DADF400678B28 /* LaunchScreen.storyboard in Resources */,
+				1429444D206DAE0100678B28 /* stops.txt in Resources */,
+				14294441206DAE0100678B28 /* calendar_dates.txt in Resources */,
+				1429444B206DAE0100678B28 /* stop_times.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,19 +696,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149778641F367BC0001B6A2D /* calendar.txt in Resources */,
-				149778671F367BC0001B6A2D /* calendar_dates.txt in Resources */,
-				149778701F367BC0001B6A2D /* routes.txt in Resources */,
-				14F88BD91F35C1120009EC63 /* Assets.xcassets in Resources */,
-				149778791F367BC0001B6A2D /* stops.txt in Resources */,
-				1497787C1F367BC0001B6A2D /* trips.txt in Resources */,
-				1497786A1F367BC0001B6A2D /* fare_attributes.txt in Resources */,
-				14F88BD71F35C1110009EC63 /* Main.storyboard in Resources */,
-				149778611F367BC0001B6A2D /* agency.txt in Resources */,
-				149778801F367BD9001B6A2D /* SharedAssets.xcassets in Resources */,
-				149778761F367BC0001B6A2D /* stop_times.txt in Resources */,
-				149778731F367BC0001B6A2D /* shapes.txt in Resources */,
-				1497786D1F367BC0001B6A2D /* fare_rules.txt in Resources */,
+				1429444A206DAE0100678B28 /* shapes.txt in Resources */,
+				14294440206DAE0100678B28 /* calendar.txt in Resources */,
+				14294444206DAE0100678B28 /* fare_attributes.txt in Resources */,
+				1429444E206DAE0100678B28 /* stops.txt in Resources */,
+				14294476206DAE1900678B28 /* fabric.apikey in Resources */,
+				1429444C206DAE0100678B28 /* stop_times.txt in Resources */,
+				14294403206DADFA00678B28 /* Assets.xcassets in Resources */,
+				14294446206DAE0100678B28 /* fare_rules.txt in Resources */,
+				14294450206DAE0100678B28 /* trips.txt in Resources */,
+				14294407206DADFA00678B28 /* Main-TV.storyboard in Resources */,
+				14294442206DAE0100678B28 /* calendar_dates.txt in Resources */,
+				14294452206DAE0100678B28 /* SharedAssets.xcassets in Resources */,
+				1429443E206DAE0100678B28 /* agency.txt in Resources */,
+				14294448206DAE0100678B28 /* routes.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,20 +730,6 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
-		14550E6D1F37B5A500872B7B /* Build Number */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Build Number";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"";
-		};
 		1483468D1F36E94700AFF585 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -703,7 +742,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Metra (iOS)/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
+		};
+		14CF3057206D983000CDD530 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		14CF3058206D983200CDD530 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Metra (tvOS)/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -712,21 +779,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				149778401F367B3F001B6A2D /* System.swift in Sources */,
-				149778821F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
-				149778381F367B2B001B6A2D /* FilterTableViewController.swift in Sources */,
-				1497782C1F367AFF001B6A2D /* MapViewController.swift in Sources */,
-				1497783A1F367B31001B6A2D /* MapFilter.swift in Sources */,
-				1497783E1F367B3A001B6A2D /* Shape.swift in Sources */,
-				149778891F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
-				149778931F367ECA001B6A2D /* AlertTableViewController.swift in Sources */,
-				149778341F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
-				149778911F367EC4001B6A2D /* AlertTableViewCell.swift in Sources */,
-				1497783C1F367B36001B6A2D /* Route.swift in Sources */,
-				14F88B961F35C0B40009EC63 /* AppDelegate.swift in Sources */,
-				149778301F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
-				149778421F367B47001B6A2D /* MetraDownloadTask.swift in Sources */,
-				1497788D1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
+				14294427206DAE0100678B28 /* MapFilter.swift in Sources */,
+				14294435206DAE0100678B28 /* MetraExtensions.swift in Sources */,
+				142943F4206DADF400678B28 /* AppDelegate.swift in Sources */,
+				14294439206DAE0100678B28 /* Shape.swift in Sources */,
+				142943F3206DADF400678B28 /* AlertTableViewController.swift in Sources */,
+				14294437206DAE0100678B28 /* Route.swift in Sources */,
+				1429442F206DAE0100678B28 /* VehiclePinView.swift in Sources */,
+				142943F2206DADF400678B28 /* AlertTableViewCell.swift in Sources */,
+				1429442B206DAE0100678B28 /* MapViewController+MapView.swift in Sources */,
+				14294431206DAE0100678B28 /* VehiclePositionAnnotation.swift in Sources */,
+				1429443B206DAE0100678B28 /* System.swift in Sources */,
+				14294425206DAE0100678B28 /* FilterTableViewController.swift in Sources */,
+				14294429206DAE0100678B28 /* MapViewController+Filter.swift in Sources */,
+				1429442D206DAE0100678B28 /* MapViewController.swift in Sources */,
+				14294433206DAE0100678B28 /* MetraDownloadTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,35 +810,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1497784D1F367B4F001B6A2D /* System.swift in Sources */,
-				14F88BD41F35C1110009EC63 /* ViewController.swift in Sources */,
-				149778841F367C7F001B6A2D /* VehiclePositionAnnotation.swift in Sources */,
-				149778491F367B4F001B6A2D /* FilterTableViewController.swift in Sources */,
-				1497782E1F367AFF001B6A2D /* MapViewController.swift in Sources */,
-				1497784A1F367B4F001B6A2D /* MapFilter.swift in Sources */,
-				1497784C1F367B4F001B6A2D /* Shape.swift in Sources */,
-				1497788B1F367D4E001B6A2D /* MetraExtensions.swift in Sources */,
-				149778361F367B14001B6A2D /* MapViewController+MapView.swift in Sources */,
-				1497784B1F367B4F001B6A2D /* Route.swift in Sources */,
-				14F88BD21F35C1110009EC63 /* AppDelegate.swift in Sources */,
-				149778321F367B0D001B6A2D /* MapViewController+Filter.swift in Sources */,
-				1497784E1F367B4F001B6A2D /* MetraDownloadTask.swift in Sources */,
-				1497788F1F367DB3001B6A2D /* VehiclePinView.swift in Sources */,
+				14294402206DADFA00678B28 /* AppDelegate.swift in Sources */,
+				1429442E206DAE0100678B28 /* MapViewController.swift in Sources */,
+				1429443C206DAE0100678B28 /* System.swift in Sources */,
+				14294438206DAE0100678B28 /* Route.swift in Sources */,
+				14294432206DAE0100678B28 /* VehiclePositionAnnotation.swift in Sources */,
+				14294428206DAE0100678B28 /* MapFilter.swift in Sources */,
+				1429442C206DAE0100678B28 /* MapViewController+MapView.swift in Sources */,
+				14294436206DAE0100678B28 /* MetraExtensions.swift in Sources */,
+				1429443A206DAE0100678B28 /* Shape.swift in Sources */,
+				14294426206DAE0100678B28 /* FilterTableViewController.swift in Sources */,
+				14294434206DAE0100678B28 /* MetraDownloadTask.swift in Sources */,
+				1429442A206DAE0100678B28 /* MapViewController+Filter.swift in Sources */,
+				14294430206DAE0100678B28 /* VehiclePinView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		140947A01F65D05000516BE3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CSV-iOS";
-			targetProxy = 1409479F1F65D05000516BE3 /* PBXContainerItemProxy */;
-		};
-		14D410391F37BC2E008FC59A /* PBXTargetDependency */ = {
+		140AFBD0206DB03800A381B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TransitKit;
-			targetProxy = 14D410381F37BC2E008FC59A /* PBXContainerItemProxy */;
+			targetProxy = 140AFBCF206DB03800A381B7 /* PBXContainerItemProxy */;
+		};
+		140AFBD2206DB03B00A381B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CSV-tvOS";
+			targetProxy = 140AFBD1206DB03B00A381B7 /* PBXContainerItemProxy */;
+		};
+		14349541206DB886000488F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CSV-iOS";
+			targetProxy = 14349540206DB886000488F8 /* PBXContainerItemProxy */;
+		};
+		14349543206DB889000488F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitKit;
+			targetProxy = 14349542206DB889000488F8 /* PBXContainerItemProxy */;
+		};
+		14349547206DB890000488F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CSV-iOS";
+			targetProxy = 14349546206DB890000488F8 /* PBXContainerItemProxy */;
+		};
+		1434954C206DB894000488F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TransitKit;
+			targetProxy = 1434954B206DB894000488F8 /* PBXContainerItemProxy */;
+		};
+		147DD641206DAD20008A88D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14F88BCE1F35C1110009EC63 /* Metra (tvOS) */;
+			targetProxy = 147DD640206DAD20008A88D9 /* PBXContainerItemProxy */;
 		};
 		14F88BB11F35C0C20009EC63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -781,26 +872,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		14F88B991F35C0B40009EC63 /* Main.storyboard */ = {
+		142943EB206DADF400678B28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14F88B9A1F35C0B40009EC63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		14F88B9E1F35C0B50009EC63 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14F88B9F1F35C0B50009EC63 /* Base */,
+				142943EC206DADF400678B28 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		14F88BD51F35C1110009EC63 /* Main.storyboard */ = {
+		142943ED206DADF400678B28 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				14F88BD61F35C1110009EC63 /* Base */,
+				142943EE206DADF400678B28 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -924,14 +1007,15 @@
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Metra\\ (iOS)",
 				);
-				INFOPLIST_FILE = Metra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Metra (iOS)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
 				PRODUCT_NAME = Metra;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -943,58 +1027,71 @@
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Metra\\ (iOS)",
 				);
-				INFOPLIST_FILE = Metra/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Metra (iOS)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
 				PRODUCT_NAME = Metra;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		14F88BB31F35C0C20009EC63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				INFOPLIST_FILE = MetraScreenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTARGET_SCREENSHOTS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.MetraScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Metra;
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Metra (iOS)";
 			};
 			name = Debug;
 		};
 		14F88BB41F35C0C20009EC63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 72S993BNAV;
 				INFOPLIST_FILE = MetraScreenshots/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DTARGET_SCREENSHOTS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.MetraScreenshots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = Metra;
+				PROVISIONING_PROFILE = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "Metra (iOS)";
 			};
 			name = Release;
 		};
 		14F88BDC1F35C1120009EC63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 72S993BNAV;
-				INFOPLIST_FILE = "Metra (tvOS)/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metra\\ (tvOS)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Metra (tvOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.Metra--tvOS-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
+				PRODUCT_NAME = Metra;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -1003,15 +1100,21 @@
 		14F88BDD1F35C1120009EC63 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 72S993BNAV;
-				INFOPLIST_FILE = "Metra (tvOS)/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Metra\\ (tvOS)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Metra (tvOS)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.Metra--tvOS-";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.Metra;
+				PRODUCT_NAME = Metra;
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};

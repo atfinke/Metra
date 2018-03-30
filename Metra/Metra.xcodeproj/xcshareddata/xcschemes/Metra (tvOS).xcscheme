@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14F88BCE1F35C1110009EC63"
-               BuildableName = "Metra (tvOS).app"
+               BuildableName = "Metra.app"
                BlueprintName = "Metra (tvOS)"
                ReferencedContainer = "container:Metra.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14F88BCE1F35C1110009EC63"
-            BuildableName = "Metra (tvOS).app"
+            BuildableName = "Metra.app"
             BlueprintName = "Metra (tvOS)"
             ReferencedContainer = "container:Metra.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14F88BCE1F35C1110009EC63"
-            BuildableName = "Metra (tvOS).app"
+            BuildableName = "Metra.app"
             BlueprintName = "Metra (tvOS)"
             ReferencedContainer = "container:Metra.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14F88BCE1F35C1110009EC63"
-            BuildableName = "Metra (tvOS).app"
+            BuildableName = "Metra.app"
             BlueprintName = "Metra (tvOS)"
             ReferencedContainer = "container:Metra.xcodeproj">
          </BuildableReference>
