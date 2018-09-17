@@ -61,7 +61,7 @@ class AlertTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        rightMarginConstraint.constant = accessoryType == .none ? 0 : -10
+        rightMarginConstraint.constant = accessoryType == .none ? 0 : -15
     }
 
 }
