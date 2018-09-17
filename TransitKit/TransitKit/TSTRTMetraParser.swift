@@ -37,7 +37,7 @@ public struct TSTRTMetraParser: TSTRTParser {
     }
 
     private static func parse(entityObject: [String: Any]) -> TSTRTFeedEntity {
-        guard let id = entityObject[.id] as? String else { fatalError() }
+        guard let identifier = entityObject[.id] as? String else { fatalError() }
 
         var alert: TSTRTAlert?
         if let alertObject = entityObject[.alert] as? [String: Any] {
@@ -52,7 +52,10 @@ public struct TSTRTMetraParser: TSTRTParser {
             vehiclePosition = parse(vehiclePositionObject: vehiclePositionObject)
         }
 
-        return TSTRTFeedEntity(id: id, tripUpdate: tripUpdate, vehiclePosition: vehiclePosition, alert: alert)
+        return TSTRTFeedEntity(id: identifier,
+                               tripUpdate: tripUpdate,
+                               vehiclePosition: vehiclePosition,
+                               alert: alert)
     }
 
     // MARK: - Parsing Individual Feed Entities
@@ -89,24 +92,16 @@ public struct TSTRTMetraParser: TSTRTParser {
         if let effectObject = alertObject[.effect] as? Int {
             effect = TSTRTEffect(rawValue: effectObject)
         }
-        var headerText: String?
-        if let headerTextObject = alertObject[.header_text] as? [String: [[String: Any]]],
-            let translationArray = headerTextObject[.translation],
-            let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
-            headerText = englishTranslation[.text] as? String
-        }
-        var descriptionText: String?
-        if let descriptionTextObject = alertObject[.description_text] as? [String: [[String: Any]]],
-            let translationArray = descriptionTextObject[.translation],
-            let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first {
-            descriptionText = englishTranslation[.text] as? String
-        }
+
+        let headerText = translatedString(for: .header_text, in: alertObject)
+        let descriptionText = translatedString(for: .description_text, in: alertObject)
+        let urlText = translatedString(for: .url, in: alertObject)
 
         return TSTRTAlert(activePeriods: activePeriods,
                           informedEntities: informedEntities,
                           cause: cause,
                           effect: effect,
-                          urlString: nil,
+                          url: urlText,
                           headerText: headerText,
                           descriptionText: descriptionText)
     }
@@ -273,5 +268,16 @@ public struct TSTRTMetraParser: TSTRTParser {
                 return nil
         }
         return TSTRTVehicleDescriptor(id: vehicleID, label: vehicleLabel, licensePlate: nil)
+    }
+
+    // MARK: - Other
+
+    private static func translatedString(for key: TSTRTParserKey, in object: [String: Any]) -> String? {
+        guard let textObject = object[key] as? [String: [[String: Any]]],
+            let translationArray = textObject[.translation],
+            let englishTranslation = translationArray.filter({ $0[.language] as? String == "en-US" }).first else {
+            return nil
+        }
+        return englishTranslation[.text] as? String
     }
 }

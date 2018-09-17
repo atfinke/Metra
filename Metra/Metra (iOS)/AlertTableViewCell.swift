@@ -15,9 +15,11 @@ class AlertTableViewCell: UITableViewCell {
     static let reuseIdentifier = "reuseIdentifier"
     let titleLabel = UILabel()
 
+    private var rightMarginConstraint: NSLayoutConstraint!
+
     // MARK: - Initalization
 
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         titleLabel.numberOfLines = 0
@@ -34,7 +36,7 @@ class AlertTableViewCell: UITableViewCell {
                                                       multiplier: 1.0,
                                                       constant: 0.0)
 
-        let rightMarginConstraint = NSLayoutConstraint(item: titleLabel,
+        rightMarginConstraint = NSLayoutConstraint(item: titleLabel,
                                                        attribute: .right,
                                                        relatedBy: .equal,
                                                        toItem: self,
@@ -44,7 +46,7 @@ class AlertTableViewCell: UITableViewCell {
 
         let constraints = [
             leftMarginConstraint,
-            rightMarginConstraint,
+            rightMarginConstraint!,
             titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10),
             titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ]
@@ -53,6 +55,13 @@ class AlertTableViewCell: UITableViewCell {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    // MARK: - View Life Cycle
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        rightMarginConstraint.constant = accessoryType == .none ? 0 : -10
     }
 
 }

@@ -25,7 +25,7 @@ public struct TSTRTAlert {
     public let effect: TSTRTEffect?
 
     /// The URL which provides additional information about the alert.
-    public let urlString: String?
+    public let url: String?
     /// Header for the alert. This plain-text string will be highlighted, for example in boldface.
     public let headerText: String?
     /**
