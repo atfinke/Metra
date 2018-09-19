@@ -34,7 +34,7 @@ class MapViewController: UIViewController {
 
     private var reloadBarButtonItem: UIBarButtonItem?
     private let loadingBarButtonItem: UIBarButtonItem? = {
-        let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        let activityView = UIActivityIndicatorView(style: .white)
         activityView.sizeToFit()
         activityView.startAnimating()
 
@@ -169,9 +169,9 @@ class MapViewController: UIViewController {
 
         for shape in System.shared.shapes {
             if !MapFilter.shouldHidePath() && !MapFilter.shouldHide(routeID: shape.routeID) {
-                mapView.add(shape.polyline)
+                mapView.addOverlay(shape.polyline)
             } else {
-                mapView.remove(shape.polyline)
+                mapView.removeOverlay(shape.polyline)
             }
         }
     }

@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         guard let url = Bundle.main.url(forResource: "fabric.apikey", withExtension: nil),
             let key = try? String(contentsOf: url) else {
@@ -25,10 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         System.shared.start()
 
-        let metraColor = UIColor(red: 11.0/255.0, green: 86.0/255.0, blue: 162.0/255.0, alpha: 1.0)
-
         UITabBar.appearance().tintColor = UIColor.white
-        UITabBar.appearance().barTintColor = metraColor
+        UITabBar.appearance().barTintColor = .metra
 
         UITabBarItem.appearance().setTitleTextAttributes([
             .foregroundColor: UIColor.white
@@ -37,9 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .foregroundColor: UIColor(red: 230.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, alpha: 1.0)
             ], for: .normal)
 
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor.white
+        ]
+
         UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().barTintColor = metraColor
+        UINavigationBar.appearance().barTintColor = .metra
 
         guard let tabBarController = window?.rootViewController as? UITabBarController else {
             fatalError()
@@ -53,4 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+}
+
+// MARK: - UIColor
+
+extension UIColor {
+    static let metra = UIColor(red: 11.0/255.0,
+                               green: 86.0/255.0,
+                               blue: 162.0/255.0,
+                               alpha: 1.0)
 }

@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SafariServices
 import TransitKit
 
-class AlertsTableViewController: UITableViewController {
+class AlertsTableViewController: UITableViewController, SFSafariViewControllerDelegate {
 
     // MARK: - Types
 
@@ -56,7 +57,7 @@ class AlertsTableViewController: UITableViewController {
 
     private var reloadBarButtonItem: UIBarButtonItem?
     private let loadingBarButtonItem: UIBarButtonItem = {
-        let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        let activityView = UIActivityIndicatorView(style: .white)
         activityView.sizeToFit()
         activityView.startAnimating()
         return UIBarButtonItem(customView: activityView)
@@ -126,7 +127,7 @@ class AlertsTableViewController: UITableViewController {
         }
     }
 
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.alerts.keys.count
@@ -137,7 +138,7 @@ class AlertsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -159,7 +160,28 @@ class AlertsTableViewController: UITableViewController {
         }
 
         cell.titleLabel.text = bridged as String
+
+        let alertIncludesLink = alert.url != nil
+
+        cell.isUserInteractionEnabled = alertIncludesLink
+        cell.accessoryType = alertIncludesLink ? .disclosureIndicator : .none
+        cell.layoutSubviews()
+
         return cell
+    }
+
+    // MARK: - UITableViewDelegate
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = alerts[sortedSections[indexPath.section]]?[indexPath.row]
+        guard let urlString = alert?.url, let url = URL(string: urlString) else {
+            return
+        }
+
+        let controller = SFSafariViewController(url: url)
+        controller.preferredBarTintColor = .metra
+        controller.delegate = self
+        present(controller, animated: true, completion: nil)
     }
 
 }

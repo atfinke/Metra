@@ -16,7 +16,7 @@ extension MapViewController: UIPopoverPresentationControllerDelegate {
             fatalError()
         }
 
-        destination.preferredContentSize = CGSize(width: 200, height: 540)
+        destination.preferredContentSize = CGSize(width: 200, height: 535)
         destination.popoverPresentationController?.delegate = self
         destination.updatedFilters = {
             self.updateFiltering()
